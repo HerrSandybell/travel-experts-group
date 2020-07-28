@@ -1,0 +1,41 @@
+/***** NAV BAR ******/
+
+nav ul {
+  display: flex;
+}
+
+nav a {
+  display: block;
+  padding: 0em 1.0em;
+  line-height: 2.5em;
+}
+
+/**** BODY *****/
+/***************/
+
+.main-content {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+/***** FOOTER *****/
+
+footer {
+  width: 100%;
+  height: 2.5rem;
+}
+
+.gitlogo {
+  width: 2em;
+  padding: 0.2em;
+}
+
+footer a {
+  margin-right: 5px;
+  text-decoration: none;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}

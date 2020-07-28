@@ -1,0 +1,46 @@
+/*******************/
+/**** UTILITIES ****/
+/*******************/
+
+/**** LAYOUT ****/
+
+main {
+  flex-grow: 1; /* Grows main section and pushed header and footer out. */
+}
+
+/* This class centers all items and takes them down to their min size.*/
+.center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.flex-column {
+  flex-direction: column;
+}
+
+.row-reverse {
+  flex-direction: row-reverse;
+}
+
+.flex-grow-1 {
+  flex-grow: 1;
+}
+
+.flex-grow-2 {
+  flex-grow: 2;
+}
+
+.align-self-end {
+  align-self: flex-end;
+}
+
+.align-self-start {
+  justify-content: flex-start;
+}
+
+.space-between {
+  justify-content: space-between;
+}
+
+/***** NAV UTILITIES *****/

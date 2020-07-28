@@ -27,6 +27,10 @@ nav ul {
   padding: 0;
 }
 
+nav, nav * {
+  margin: 0; /* nav bar margin reset */
+}
+
 /**
  * Remove the margin in all browsers.
  */
