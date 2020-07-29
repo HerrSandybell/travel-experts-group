@@ -2,12 +2,12 @@ const mongoose = require('mongoose');
 
 // Define Schema
 const packagesSchema =  new mongoose.Schema({
-  Id:                 String,
+  Id:                 Number,
   packageName:        String,
   packageDescription: String,
   packageStartDate:   Date,
   packageEndDate:     Date, 
-  packagePrice:       String,
+  packagePrice:       Number,
 	imageFile:          String,
 });
 
