@@ -1,0 +1,28 @@
+{
+  "name": "travel-experts-group",
+  "version": "1.0.0",
+  "description": "Group project for Proj207",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/HerrSandybell/travel-experts-group.git"
+  },
+  "author": "Tarek, Muna, and Aslam",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/HerrSandybell/travel-experts-group/issues"
+  },
+  "homepage": "https://github.com/HerrSandybell/travel-experts-group#readme",
+  "dependencies": {
+    "dotenv": "^8.2.0",
+    "ejs": "^3.1.3",
+    "express": "^4.17.1",
+    "moment": "^2.27.0",
+    "mongoose": "^5.9.26",
+    "nodemon": "^2.0.4"
+  }
+}
