@@ -1,49 +1,41 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="author" content="Muna, Aslam, Tarek">
-    <meta name="date" content="July 27,2020">
-    <meta name="course module" content="cPRG-210-XM1- Web Development Project">
-    <meta name="Project" content="Part 1">
-    <title>Travel Experts login </title>
-    <link rel="stylesheet" href="">
- <!-- Navigation-->
-
-            <ul>      
-                <li><a href="homepage.html">Home</a></li>
-                <li><a href="registration.html">Registration</a></li>
-                <li><a href="VacPack.html">Vacation Package</a></li>
-                <li><a href="contact.html">Contact Us</a></li>
-                <li><a href="login.html">Login</a></li>
-            </ul>       
+  <%- include('./partials/meta-data'); %>
+  <%- include('./partials/style-sheets'); %>
+  <title>Travel Experts Home</title>
 </head>
+
 <body>
-  <!-- code prompts user for username and password-->
-  <div class="placement">
-    <h2>Login Here</h2>
-</div>
+  <div class='main-content'>
 
-<div id="error"></div>
-<form id = "form" action="/" method="GET">
-    <fieldset>
-        <legend><h3>Login</h3></legend>
-        <p>Username:<input id="username" type="username" name="username" required></p>
-        <p>Password:<input id="Password" type="password" name="Password" required></p>
-    
+    <%- include('./partials/navigation'); %>
 
-        <button type="reset">Reset</button>
-        <button type="submit" id= "submit">Submit</button>
+  <main>
+    <div class="placement">
+      <h2>Login Here</h2>
+    </div>
 
-    </fieldset>     
-</form>
+    <div id="error"></div>
+    <form id = "form" action="/" method="GET">
+        <fieldset>
+            <legend><h3>Login</h3></legend>
+            <p>Username:<input id="username" type="username" name="username" required></p>
+            <p>Password:<input id="Password" type="password" name="Password" required></p>
+        
 
+            <button type="reset">Reset</button>
+            <button type="submit" id= "submit">Submit</button>
+
+        </fieldset>     
+    </form>
+  </main>
+
+  <%- include('./partials/footer'); %>
+
+  </div>
+  <script>
+  </script>
 </body>
-
-<!--the code below links the contact menu tab to the footer-->
-<footer>
-        &copy; 2020 Travel Experts
-</footer>
-
 </html>
+
