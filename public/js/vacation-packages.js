@@ -54,28 +54,27 @@ const packagesList = [
     imageFile: "eastern.jpg",
   },
 ];
-const packages = document.querySelector('.packages');
 
-let imgTemplate = '';
-
-console.log(packages);
+const vacpackages = document.querySelector('.vacpackages');
 
 packagesList.forEach((packagesList) => {
   console.log(packagesList);
-  imgTemplate += `
-	<figure> 
+  vacpackages.innerHTML += `
+  
+  <figure> 
         <figcaption> ${packagesList.packageName}</figcaption>
-        <img src="/public/images/${packagesList.imageFile}" width="600" height="600">
+         <img src="http://localhost:3000/images/${packagesList.imageFile}" width="600" height="600">
         <figcaption> Description: ${packagesList.packagedDescription} </figcaption> 
         <figcaption> Package Starting Price($): ${packagesList.packagePrice} </figcaption>
         <figcaption> Book By: ${packagesList.packageStartDate} </figcaption>
         <figcaption> Valid Until: ${packagesList.packageEndDate} </figcaption>
 	 </figure> `;
 
-
 });
 
-packages.innerHTML = imgTemplate;
+
+
+
 
 
 
