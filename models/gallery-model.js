@@ -3,6 +3,7 @@ const mongoose = require('mongoose');
 // Define Schema
 const packagesSchema =  new mongoose.Schema({
   Id:                 Number,
+  country:            String,
   packageName:        String,
   packageDescription: String,
   packageStartDate:   Date,

@@ -1,0 +1,26 @@
+[
+{ 
+    "_id" : "AB", 
+    "provcode" : "AB", 
+    "provname" : "Alberta", 
+    "countrycode" : "CA"
+},
+{ 
+    "_id" : "BC", 
+    "provcode" : "BC", 
+    "provname" : "BC", 
+    "countrycode" : "CA"
+},
+{ 
+    "_id" : "MT", 
+    "provcode" : "MT", 
+    "provname" : "Montana", 
+    "countrycode" : "US"
+},
+{ 
+    "_id" : "TX", 
+    "provcode" : "TX", 
+    "provname" : "Texas", 
+    "countrycode" : "US"
+}
+]

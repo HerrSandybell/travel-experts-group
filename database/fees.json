@@ -1,0 +1,51 @@
+[
+{ 
+    "_id" : "BK", 
+    "FeeId" : "BK", 
+    "FeeName" : "Booking Charge", 
+    "FeeAmt" : 25.0, 
+    "FeeDesc" : null
+},
+{ 
+    "_id" : "CH", 
+    "FeeId" : "CH", 
+    "FeeName" : "Change", 
+    "FeeAmt" : 15.0, 
+    "FeeDesc" : null
+},
+{ 
+    "_id" : "GR", 
+    "FeeId" : "GR", 
+    "FeeName" : "Group Booking", 
+    "FeeAmt" : 100.0, 
+    "FeeDesc" : null
+},
+{ 
+    "_id" : "NC", 
+    "FeeId" : "NC", 
+    "FeeName" : "No Charge", 
+    "FeeAmt" : 0.0, 
+    "FeeDesc" : null
+},
+{ 
+    "_id" : "NSF", 
+    "FeeId" : "NSF", 
+    "FeeName" : "Insufficient Funds", 
+    "FeeAmt" : 25.0, 
+    "FeeDesc" : null
+},
+{ 
+    "_id" : "RF", 
+    "FeeId" : "RF", 
+    "FeeName" : "Refund", 
+    "FeeAmt" : 25.0, 
+    "FeeDesc" : null
+},
+{ 
+    "_id" : "RS", 
+    "FeeId" : "RS", 
+    "FeeName" : "Research", 
+    "FeeAmt" : 50.0, 
+    "FeeDesc" : null
+}
+]

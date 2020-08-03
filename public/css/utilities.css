@@ -4,8 +4,16 @@
 
 /**** LAYOUT ****/
 
+
+.main-content {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
 main {
   flex-grow: 1; /* Grows main section and pushed header and footer out. */
+  align-self: center;
 }
 
 /* This class centers all items and takes them down to their min size.*/

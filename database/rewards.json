@@ -1,0 +1,32 @@
+[
+{ 
+    "_id" : NumberInt(1), 
+    "RewardId" : NumberInt(1), 
+    "RwdName" : "Air Miles", 
+    "RwdDesc" : null
+},
+{ 
+    "_id" : NumberInt(2), 
+    "RewardId" : NumberInt(2), 
+    "RwdName" : "AeroPlan", 
+    "RwdDesc" : null
+},
+{ 
+    "_id" : NumberInt(3), 
+    "RewardId" : NumberInt(3), 
+    "RwdName" : "AeroPlan Gold", 
+    "RwdDesc" : null
+},
+{ 
+    "_id" : NumberInt(4), 
+    "RewardId" : NumberInt(4), 
+    "RwdName" : "Coast Rewards", 
+    "RwdDesc" : null
+},
+{ 
+    "_id" : NumberInt(5), 
+    "RewardId" : NumberInt(5), 
+    "RwdName" : "Mariott Rewards", 
+    "RwdDesc" : null
+}
+]

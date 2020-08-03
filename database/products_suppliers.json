@@ -1,0 +1,470 @@
+[
+{ 
+    "_id" : NumberInt(1), 
+    "ProductSupplierId" : NumberInt(1), 
+    "ProductId" : NumberInt(1), 
+    "SupplierId" : NumberInt(5492)
+},
+{ 
+    "_id" : NumberInt(2), 
+    "ProductSupplierId" : NumberInt(2), 
+    "ProductId" : NumberInt(1), 
+    "SupplierId" : NumberInt(6505)
+},
+{ 
+    "_id" : NumberInt(3), 
+    "ProductSupplierId" : NumberInt(3), 
+    "ProductId" : NumberInt(8), 
+    "SupplierId" : NumberInt(796)
+},
+{ 
+    "_id" : NumberInt(4), 
+    "ProductSupplierId" : NumberInt(4), 
+    "ProductId" : NumberInt(1), 
+    "SupplierId" : NumberInt(4196)
+},
+{ 
+    "_id" : NumberInt(6), 
+    "ProductSupplierId" : NumberInt(6), 
+    "ProductId" : NumberInt(8), 
+    "SupplierId" : NumberInt(1040)
+},
+{ 
+    "_id" : NumberInt(7), 
+    "ProductSupplierId" : NumberInt(7), 
+    "ProductId" : NumberInt(1), 
+    "SupplierId" : NumberInt(3576)
+},
+{ 
+    "_id" : NumberInt(8), 
+    "ProductSupplierId" : NumberInt(8), 
+    "ProductId" : NumberInt(3), 
+    "SupplierId" : NumberInt(845)
+},
+{ 
+    "_id" : NumberInt(9), 
+    "ProductSupplierId" : NumberInt(9), 
+    "ProductId" : NumberInt(7), 
+    "SupplierId" : NumberInt(828)
+},
+{ 
+    "_id" : NumberInt(10), 
+    "ProductSupplierId" : NumberInt(10), 
+    "ProductId" : NumberInt(8), 
+    "SupplierId" : NumberInt(5777)
+},
+{ 
+    "_id" : NumberInt(11), 
+    "ProductSupplierId" : NumberInt(11), 
+    "ProductId" : NumberInt(8), 
+    "SupplierId" : NumberInt(5827)
+},
+{ 
+    "_id" : NumberInt(12), 
+    "ProductSupplierId" : NumberInt(12), 
+    "ProductId" : NumberInt(5), 
+    "SupplierId" : NumberInt(3273)
+},
+{ 
+    "_id" : NumberInt(13), 
+    "ProductSupplierId" : NumberInt(13), 
+    "ProductId" : NumberInt(1), 
+    "SupplierId" : NumberInt(80)
+},
+{ 
+    "_id" : NumberInt(14), 
+    "ProductSupplierId" : NumberInt(14), 
+    "ProductId" : NumberInt(8), 
+    "SupplierId" : NumberInt(9396)
+},
+{ 
+    "_id" : NumberInt(15), 
+    "ProductSupplierId" : NumberInt(15), 
+    "ProductId" : NumberInt(8), 
+    "SupplierId" : NumberInt(3589)
+},
+{ 
+    "_id" : NumberInt(16), 
+    "ProductSupplierId" : NumberInt(16), 
+    "ProductId" : NumberInt(1), 
+    "SupplierId" : NumberInt(69)
+},
+{ 
+    "_id" : NumberInt(19), 
+    "ProductSupplierId" : NumberInt(19), 
+    "ProductId" : NumberInt(1), 
+    "SupplierId" : NumberInt(3376)
+},
+{ 
+    "_id" : NumberInt(20), 
+    "ProductSupplierId" : NumberInt(20), 
+    "ProductId" : NumberInt(3), 
+    "SupplierId" : NumberInt(323)
+},
+{ 
+    "_id" : NumberInt(23), 
+    "ProductSupplierId" : NumberInt(23), 
+    "ProductId" : NumberInt(1), 
+    "SupplierId" : NumberInt(3549)
+},
+{ 
+    "_id" : NumberInt(24), 
+    "ProductSupplierId" : NumberInt(24), 
+    "ProductId" : NumberInt(5), 
+    "SupplierId" : NumberInt(1918)
+},
+{ 
+    "_id" : NumberInt(25), 
+    "ProductSupplierId" : NumberInt(25), 
+    "ProductId" : NumberInt(3), 
+    "SupplierId" : NumberInt(11156)
+},
+{ 
+    "_id" : NumberInt(26), 
+    "ProductSupplierId" : NumberInt(26), 
+    "ProductId" : NumberInt(8), 
+    "SupplierId" : NumberInt(8837)
+},
+{ 
+    "_id" : NumberInt(28), 
+    "ProductSupplierId" : NumberInt(28), 
+    "ProductId" : NumberInt(8), 
+    "SupplierId" : NumberInt(8089)
+},
+{ 
+    "_id" : NumberInt(29), 
+    "ProductSupplierId" : NumberInt(29), 
+    "ProductId" : NumberInt(1), 
+    "SupplierId" : NumberInt(1028)
+},
+{ 
+    "_id" : NumberInt(30), 
+    "ProductSupplierId" : NumberInt(30), 
+    "ProductId" : NumberInt(1), 
+    "SupplierId" : NumberInt(2466)
+},
+{ 
+    "_id" : NumberInt(31), 
+    "ProductSupplierId" : NumberInt(31), 
+    "ProductId" : NumberInt(5), 
+    "SupplierId" : NumberInt(1406)
+},
+{ 
+    "_id" : NumberInt(32), 
+    "ProductSupplierId" : NumberInt(32), 
+    "ProductId" : NumberInt(3), 
+    "SupplierId" : NumberInt(1416)
+},
+{ 
+    "_id" : NumberInt(33), 
+    "ProductSupplierId" : NumberInt(33), 
+    "ProductId" : NumberInt(5), 
+    "SupplierId" : NumberInt(13596)
+},
+{ 
+    "_id" : NumberInt(34), 
+    "ProductSupplierId" : NumberInt(34), 
+    "ProductId" : NumberInt(1), 
+    "SupplierId" : NumberInt(9323)
+},
+{ 
+    "_id" : NumberInt(35), 
+    "ProductSupplierId" : NumberInt(35), 
+    "ProductId" : NumberInt(5), 
+    "SupplierId" : NumberInt(11237)
+},
+{ 
+    "_id" : NumberInt(36), 
+    "ProductSupplierId" : NumberInt(36), 
+    "ProductId" : NumberInt(8), 
+    "SupplierId" : NumberInt(9785)
+},
+{ 
+    "_id" : NumberInt(37), 
+    "ProductSupplierId" : NumberInt(37), 
+    "ProductId" : NumberInt(5), 
+    "SupplierId" : NumberInt(11163)
+},
+{ 
+    "_id" : NumberInt(39), 
+    "ProductSupplierId" : NumberInt(39), 
+    "ProductId" : NumberInt(9), 
+    "SupplierId" : NumberInt(11172)
+},
+{ 
+    "_id" : NumberInt(40), 
+    "ProductSupplierId" : NumberInt(40), 
+    "ProductId" : NumberInt(8), 
+    "SupplierId" : NumberInt(9285)
+},
+{ 
+    "_id" : NumberInt(41), 
+    "ProductSupplierId" : NumberInt(41), 
+    "ProductId" : NumberInt(5), 
+    "SupplierId" : NumberInt(3622)
+},
+{ 
+    "_id" : NumberInt(42), 
+    "ProductSupplierId" : NumberInt(42), 
+    "ProductId" : NumberInt(5), 
+    "SupplierId" : NumberInt(9323)
+},
+{ 
+    "_id" : NumberInt(43), 
+    "ProductSupplierId" : NumberInt(43), 
+    "ProductId" : NumberInt(1), 
+    "SupplierId" : NumberInt(1766)
+},
+{ 
+    "_id" : NumberInt(44), 
+    "ProductSupplierId" : NumberInt(44), 
+    "ProductId" : NumberInt(1), 
+    "SupplierId" : NumberInt(3212)
+},
+{ 
+    "_id" : NumberInt(45), 
+    "ProductSupplierId" : NumberInt(45), 
+    "ProductId" : NumberInt(9), 
+    "SupplierId" : NumberInt(11174)
+},
+{ 
+    "_id" : NumberInt(46), 
+    "ProductSupplierId" : NumberInt(46), 
+    "ProductId" : NumberInt(8), 
+    "SupplierId" : NumberInt(3600)
+},
+{ 
+    "_id" : NumberInt(47), 
+    "ProductSupplierId" : NumberInt(47), 
+    "ProductId" : NumberInt(9), 
+    "SupplierId" : NumberInt(11160)
+},
+{ 
+    "_id" : NumberInt(48), 
+    "ProductSupplierId" : NumberInt(48), 
+    "ProductId" : NumberInt(8), 
+    "SupplierId" : NumberInt(11549)
+},
+{ 
+    "_id" : NumberInt(49), 
+    "ProductSupplierId" : NumberInt(49), 
+    "ProductId" : NumberInt(4), 
+    "SupplierId" : NumberInt(2827)
+},
+{ 
+    "_id" : NumberInt(50), 
+    "ProductSupplierId" : NumberInt(50), 
+    "ProductId" : NumberInt(9), 
+    "SupplierId" : NumberInt(12657)
+},
+{ 
+    "_id" : NumberInt(51), 
+    "ProductSupplierId" : NumberInt(51), 
+    "ProductId" : NumberInt(8), 
+    "SupplierId" : NumberInt(7377)
+},
+{ 
+    "_id" : NumberInt(52), 
+    "ProductSupplierId" : NumberInt(52), 
+    "ProductId" : NumberInt(5), 
+    "SupplierId" : NumberInt(6550)
+},
+{ 
+    "_id" : NumberInt(53), 
+    "ProductSupplierId" : NumberInt(53), 
+    "ProductId" : NumberInt(4), 
+    "SupplierId" : NumberInt(1634)
+},
+{ 
+    "_id" : NumberInt(54), 
+    "ProductSupplierId" : NumberInt(54), 
+    "ProductId" : NumberInt(8), 
+    "SupplierId" : NumberInt(2140)
+},
+{ 
+    "_id" : NumberInt(55), 
+    "ProductSupplierId" : NumberInt(55), 
+    "ProductId" : NumberInt(3), 
+    "SupplierId" : NumberInt(317)
+},
+{ 
+    "_id" : NumberInt(56), 
+    "ProductSupplierId" : NumberInt(56), 
+    "ProductId" : NumberInt(1), 
+    "SupplierId" : NumberInt(1205)
+},
+{ 
+    "_id" : NumberInt(57), 
+    "ProductSupplierId" : NumberInt(57), 
+    "ProductId" : NumberInt(8), 
+    "SupplierId" : NumberInt(3633)
+},
+{ 
+    "_id" : NumberInt(58), 
+    "ProductSupplierId" : NumberInt(58), 
+    "ProductId" : NumberInt(2), 
+    "SupplierId" : NumberInt(6873)
+},
+{ 
+    "_id" : NumberInt(59), 
+    "ProductSupplierId" : NumberInt(59), 
+    "ProductId" : NumberInt(1), 
+    "SupplierId" : NumberInt(7377)
+},
+{ 
+    "_id" : NumberInt(60), 
+    "ProductSupplierId" : NumberInt(60), 
+    "ProductId" : NumberInt(5), 
+    "SupplierId" : NumberInt(7244)
+},
+{ 
+    "_id" : NumberInt(61), 
+    "ProductSupplierId" : NumberInt(61), 
+    "ProductId" : NumberInt(3), 
+    "SupplierId" : NumberInt(2938)
+},
+{ 
+    "_id" : NumberInt(63), 
+    "ProductSupplierId" : NumberInt(63), 
+    "ProductId" : NumberInt(2), 
+    "SupplierId" : NumberInt(5081)
+},
+{ 
+    "_id" : NumberInt(64), 
+    "ProductSupplierId" : NumberInt(64), 
+    "ProductId" : NumberInt(1), 
+    "SupplierId" : NumberInt(3119)
+},
+{ 
+    "_id" : NumberInt(65), 
+    "ProductSupplierId" : NumberInt(65), 
+    "ProductId" : NumberInt(9), 
+    "SupplierId" : NumberInt(2998)
+},
+{ 
+    "_id" : NumberInt(66), 
+    "ProductSupplierId" : NumberInt(66), 
+    "ProductId" : NumberInt(8), 
+    "SupplierId" : NumberInt(3576)
+},
+{ 
+    "_id" : NumberInt(67), 
+    "ProductSupplierId" : NumberInt(67), 
+    "ProductId" : NumberInt(8), 
+    "SupplierId" : NumberInt(2592)
+},
+{ 
+    "_id" : NumberInt(68), 
+    "ProductSupplierId" : NumberInt(68), 
+    "ProductId" : NumberInt(4), 
+    "SupplierId" : NumberInt(100)
+},
+{ 
+    "_id" : NumberInt(69), 
+    "ProductSupplierId" : NumberInt(69), 
+    "ProductId" : NumberInt(9), 
+    "SupplierId" : NumberInt(2987)
+},
+{ 
+    "_id" : NumberInt(70), 
+    "ProductSupplierId" : NumberInt(70), 
+    "ProductId" : NumberInt(4), 
+    "SupplierId" : NumberInt(1005)
+},
+{ 
+    "_id" : NumberInt(71), 
+    "ProductSupplierId" : NumberInt(71), 
+    "ProductId" : NumberInt(4), 
+    "SupplierId" : NumberInt(908)
+},
+{ 
+    "_id" : NumberInt(72), 
+    "ProductSupplierId" : NumberInt(72), 
+    "ProductId" : NumberInt(1), 
+    "SupplierId" : NumberInt(5796)
+},
+{ 
+    "_id" : NumberInt(73), 
+    "ProductSupplierId" : NumberInt(73), 
+    "ProductId" : NumberInt(10), 
+    "SupplierId" : NumberInt(2386)
+},
+{ 
+    "_id" : NumberInt(74), 
+    "ProductSupplierId" : NumberInt(74), 
+    "ProductId" : NumberInt(1), 
+    "SupplierId" : NumberInt(3650)
+},
+{ 
+    "_id" : NumberInt(75), 
+    "ProductSupplierId" : NumberInt(75), 
+    "ProductId" : NumberInt(4), 
+    "SupplierId" : NumberInt(1425)
+},
+{ 
+    "_id" : NumberInt(76), 
+    "ProductSupplierId" : NumberInt(76), 
+    "ProductId" : NumberInt(8), 
+    "SupplierId" : NumberInt(6346)
+},
+{ 
+    "_id" : NumberInt(78), 
+    "ProductSupplierId" : NumberInt(78), 
+    "ProductId" : NumberInt(1), 
+    "SupplierId" : NumberInt(1685)
+},
+{ 
+    "_id" : NumberInt(79), 
+    "ProductSupplierId" : NumberInt(79), 
+    "ProductId" : NumberInt(2), 
+    "SupplierId" : NumberInt(2588)
+},
+{ 
+    "_id" : NumberInt(80), 
+    "ProductSupplierId" : NumberInt(80), 
+    "ProductId" : NumberInt(6), 
+    "SupplierId" : NumberInt(1620)
+},
+{ 
+    "_id" : NumberInt(81), 
+    "ProductSupplierId" : NumberInt(81), 
+    "ProductId" : NumberInt(4), 
+    "SupplierId" : NumberInt(1542)
+},
+{ 
+    "_id" : NumberInt(82), 
+    "ProductSupplierId" : NumberInt(82), 
+    "ProductId" : NumberInt(5), 
+    "SupplierId" : NumberInt(9766)
+},
+{ 
+    "_id" : NumberInt(83), 
+    "ProductSupplierId" : NumberInt(83), 
+    "ProductId" : NumberInt(5), 
+    "SupplierId" : NumberInt(5228)
+},
+{ 
+    "_id" : NumberInt(84), 
+    "ProductSupplierId" : NumberInt(84), 
+    "ProductId" : NumberInt(6), 
+    "SupplierId" : NumberInt(9396)
+},
+{ 
+    "_id" : NumberInt(87), 
+    "ProductSupplierId" : NumberInt(87), 
+    "ProductId" : NumberInt(1), 
+    "SupplierId" : NumberInt(1859)
+},
+{ 
+    "_id" : NumberInt(90), 
+    "ProductSupplierId" : NumberInt(90), 
+    "ProductId" : NumberInt(1), 
+    "SupplierId" : NumberInt(1713)
+},
+{ 
+    "_id" : NumberInt(93), 
+    "ProductSupplierId" : NumberInt(93), 
+    "ProductId" : NumberInt(4), 
+    "SupplierId" : NumberInt(3650)
+}
+]

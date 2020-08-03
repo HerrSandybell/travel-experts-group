@@ -6,6 +6,10 @@ body {
   --c: #DAAD86;
   --e: #BC986A;
   --f: #FBEEC1;
+
+  --navh: 5vh;
+  --heroh: 55vh;
+  --cardh: 40vh;
 }
 
 nav {
@@ -20,7 +24,7 @@ nav {
   background: white;
 }
 
-/***** General selectors *******/
+/***** resets *******/
 
 a {
 text-decoration: none;
@@ -43,7 +47,7 @@ nav a {
   font-weight: 700;
 
   padding: 0em 1.0em;
-  line-height: 2.5em;
+  line-height: var(--navh);
 
   position: relative;
   z-index: 1;
@@ -83,7 +87,7 @@ nav a:hover{
   background-image: url('https://picsum.photos/id/1006/3000/2000');
   background-position: center;
   background-size: cover;
-  height: 95vh;
+  height: var(--heroh);
 }
 
 .hero-section h1 {
@@ -153,11 +157,10 @@ nav a:hover{
 /**** MAIN CONTENT *****/
 /***********************/
 
-.main-content {
-  display: flex;
-  flex-direction: column;
-  min-height: 100vh;
-}
+
+/* main {
+  width: 1020px;
+} */
 
 /***** FOOTER *****/
 

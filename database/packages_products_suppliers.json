@@ -1,0 +1,90 @@
+[
+{ 
+    "_id" : {
+        "PackageId" : NumberInt(1), 
+        "ProductSupplierId" : NumberInt(65)
+    }, 
+    "PackageId" : NumberInt(1), 
+    "ProductSupplierId" : NumberInt(65)
+},
+{ 
+    "_id" : {
+        "PackageId" : NumberInt(1), 
+        "ProductSupplierId" : NumberInt(93)
+    }, 
+    "PackageId" : NumberInt(1), 
+    "ProductSupplierId" : NumberInt(93)
+},
+{ 
+    "_id" : {
+        "PackageId" : NumberInt(2), 
+        "ProductSupplierId" : NumberInt(32)
+    }, 
+    "PackageId" : NumberInt(2), 
+    "ProductSupplierId" : NumberInt(32)
+},
+{ 
+    "_id" : {
+        "PackageId" : NumberInt(2), 
+        "ProductSupplierId" : NumberInt(33)
+    }, 
+    "PackageId" : NumberInt(2), 
+    "ProductSupplierId" : NumberInt(33)
+},
+{ 
+    "_id" : {
+        "PackageId" : NumberInt(2), 
+        "ProductSupplierId" : NumberInt(90)
+    }, 
+    "PackageId" : NumberInt(2), 
+    "ProductSupplierId" : NumberInt(90)
+},
+{ 
+    "_id" : {
+        "PackageId" : NumberInt(3), 
+        "ProductSupplierId" : NumberInt(28)
+    }, 
+    "PackageId" : NumberInt(3), 
+    "ProductSupplierId" : NumberInt(28)
+},
+{ 
+    "_id" : {
+        "PackageId" : NumberInt(3), 
+        "ProductSupplierId" : NumberInt(82)
+    }, 
+    "PackageId" : NumberInt(3), 
+    "ProductSupplierId" : NumberInt(82)
+},
+{ 
+    "_id" : {
+        "PackageId" : NumberInt(3), 
+        "ProductSupplierId" : NumberInt(87)
+    }, 
+    "PackageId" : NumberInt(3), 
+    "ProductSupplierId" : NumberInt(87)
+},
+{ 
+    "_id" : {
+        "PackageId" : NumberInt(4), 
+        "ProductSupplierId" : NumberInt(9)
+    }, 
+    "PackageId" : NumberInt(4), 
+    "ProductSupplierId" : NumberInt(9)
+},
+{ 
+    "_id" : {
+        "PackageId" : NumberInt(4), 
+        "ProductSupplierId" : NumberInt(65)
+    }, 
+    "PackageId" : NumberInt(4), 
+    "ProductSupplierId" : NumberInt(65)
+},
+{ 
+    "_id" : {
+        "PackageId" : NumberInt(4), 
+        "ProductSupplierId" : NumberInt(84)
+    }, 
+    "PackageId" : NumberInt(4), 
+    "ProductSupplierId" : NumberInt(84)
+}
+]

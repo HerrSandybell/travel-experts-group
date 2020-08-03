@@ -1,0 +1,102 @@
+[
+{ 
+    "_id" : "ICT217095-1573709509286", 
+    "hostname" : "ICT217095", 
+    "startTime" : ISODate("2019-11-14T05:31:49.000+0000"), 
+    "startTimeLocal" : "Wed Nov 13 22:31:49.286", 
+    "cmdLine" : {
+
+    }, 
+    "pid" : NumberLong(14700), 
+    "buildinfo" : {
+        "version" : "4.2.1", 
+        "gitVersion" : "edf6d45851c0b9ee15548f0f847df141764a317e", 
+        "targetMinOS" : "Windows 7/Windows Server 2008 R2", 
+        "modules" : [
+
+        ], 
+        "allocator" : "tcmalloc", 
+        "javascriptEngine" : "mozjs", 
+        "sysInfo" : "deprecated", 
+        "versionArray" : [
+            NumberInt(4), 
+            NumberInt(2), 
+            NumberInt(1), 
+            NumberInt(0)
+        ], 
+        "openssl" : {
+            "running" : "Windows SChannel"
+        }, 
+        "buildEnvironment" : {
+            "distmod" : "2012plus", 
+            "distarch" : "x86_64", 
+            "cc" : "cl: Microsoft (R) C/C++ Optimizing Compiler Version 19.16.27034 for x64", 
+            "ccflags" : "/nologo /EHsc /W3 /wd4068 /wd4244 /wd4267 /wd4290 /wd4351 /wd4355 /wd4373 /wd4800 /wd5041 /wd4291 /we4013 /we4099 /we4930 /WX /errorReport:none /MD /O2 /Oy- /bigobj /utf-8 /permissive- /Zc:__cplusplus /Zc:sizedDealloc /volatile:iso /diagnostics:caret /std:c++17 /Gw /Gy /Zc:inline", 
+            "cxx" : "cl: Microsoft (R) C/C++ Optimizing Compiler Version 19.16.27034 for x64", 
+            "cxxflags" : "/TP", 
+            "linkflags" : "/nologo /DEBUG /INCREMENTAL:NO /LARGEADDRESSAWARE /OPT:REF", 
+            "target_arch" : "x86_64", 
+            "target_os" : "windows"
+        }, 
+        "bits" : NumberInt(64), 
+        "debug" : false, 
+        "maxBsonObjectSize" : NumberInt(16777216), 
+        "storageEngines" : [
+            "biggie", 
+            "devnull", 
+            "ephemeralForTest", 
+            "wiredTiger"
+        ]
+    }
+},
+{ 
+    "_id" : "ICT217095-1574027642407", 
+    "hostname" : "ICT217095", 
+    "startTime" : ISODate("2019-11-17T21:54:02.000+0000"), 
+    "startTimeLocal" : "Sun Nov 17 14:54:02.407", 
+    "cmdLine" : {
+
+    }, 
+    "pid" : NumberLong(5912), 
+    "buildinfo" : {
+        "version" : "4.2.1", 
+        "gitVersion" : "edf6d45851c0b9ee15548f0f847df141764a317e", 
+        "targetMinOS" : "Windows 7/Windows Server 2008 R2", 
+        "modules" : [
+
+        ], 
+        "allocator" : "tcmalloc", 
+        "javascriptEngine" : "mozjs", 
+        "sysInfo" : "deprecated", 
+        "versionArray" : [
+            NumberInt(4), 
+            NumberInt(2), 
+            NumberInt(1), 
+            NumberInt(0)
+        ], 
+        "openssl" : {
+            "running" : "Windows SChannel"
+        }, 
+        "buildEnvironment" : {
+            "distmod" : "2012plus", 
+            "distarch" : "x86_64", 
+            "cc" : "cl: Microsoft (R) C/C++ Optimizing Compiler Version 19.16.27034 for x64", 
+            "ccflags" : "/nologo /EHsc /W3 /wd4068 /wd4244 /wd4267 /wd4290 /wd4351 /wd4355 /wd4373 /wd4800 /wd5041 /wd4291 /we4013 /we4099 /we4930 /WX /errorReport:none /MD /O2 /Oy- /bigobj /utf-8 /permissive- /Zc:__cplusplus /Zc:sizedDealloc /volatile:iso /diagnostics:caret /std:c++17 /Gw /Gy /Zc:inline", 
+            "cxx" : "cl: Microsoft (R) C/C++ Optimizing Compiler Version 19.16.27034 for x64", 
+            "cxxflags" : "/TP", 
+            "linkflags" : "/nologo /DEBUG /INCREMENTAL:NO /LARGEADDRESSAWARE /OPT:REF", 
+            "target_arch" : "x86_64", 
+            "target_os" : "windows"
+        }, 
+        "bits" : NumberInt(64), 
+        "debug" : false, 
+        "maxBsonObjectSize" : NumberInt(16777216), 
+        "storageEngines" : [
+            "biggie", 
+            "devnull", 
+            "ephemeralForTest", 
+            "wiredTiger"
+        ]
+    }
+}
+]

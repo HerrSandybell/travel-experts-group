@@ -1,0 +1,12 @@
+[
+{ 
+    "_id" : "CA", 
+    "countrycode" : "CA", 
+    "countryname" : "Canada"
+},
+{ 
+    "_id" : "US", 
+    "countrycode" : "US", 
+    "countryname" : "United States"
+}
+]

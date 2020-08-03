@@ -1,0 +1,186 @@
+[
+{ 
+    "_id" : NumberInt(2), 
+    "CreditCardId" : NumberInt(2), 
+    "CCName" : "AMEX", 
+    "CCNumber" : "12342324248393", 
+    "CCExpiry" : ISODate("2019-04-03T00:00:00.000+0000"), 
+    "CustomerId" : NumberInt(123)
+},
+{ 
+    "_id" : NumberInt(26), 
+    "CreditCardId" : NumberInt(26), 
+    "CCName" : "AMEX", 
+    "CCNumber" : "33454212345651", 
+    "CCExpiry" : ISODate("2019-09-29T00:00:00.000+0000"), 
+    "CustomerId" : NumberInt(127)
+},
+{ 
+    "_id" : NumberInt(28), 
+    "CreditCardId" : NumberInt(28), 
+    "CCName" : "AMEX", 
+    "CCNumber" : "3422343212433430", 
+    "CCExpiry" : ISODate("2019-07-19T00:00:00.000+0000"), 
+    "CustomerId" : NumberInt(107)
+},
+{ 
+    "_id" : NumberInt(30), 
+    "CreditCardId" : NumberInt(30), 
+    "CCName" : "AMEX", 
+    "CCNumber" : "34458998784345", 
+    "CCExpiry" : ISODate("2019-08-22T00:00:00.000+0000"), 
+    "CustomerId" : NumberInt(140)
+},
+{ 
+    "_id" : NumberInt(31), 
+    "CreditCardId" : NumberInt(31), 
+    "CCName" : "AMEX", 
+    "CCNumber" : "345433789979389", 
+    "CCExpiry" : ISODate("2019-11-05T00:00:00.000+0000"), 
+    "CustomerId" : NumberInt(130)
+},
+{ 
+    "_id" : NumberInt(41), 
+    "CreditCardId" : NumberInt(41), 
+    "CCName" : "AMEX", 
+    "CCNumber" : "3522354387984530", 
+    "CCExpiry" : ISODate("2019-06-09T00:00:00.000+0000"), 
+    "CustomerId" : NumberInt(106)
+},
+{ 
+    "_id" : NumberInt(63), 
+    "CreditCardId" : NumberInt(63), 
+    "CCName" : "AMEX", 
+    "CCNumber" : "632456487984533", 
+    "CCExpiry" : ISODate("2019-01-02T00:00:00.000+0000"), 
+    "CustomerId" : NumberInt(142)
+},
+{ 
+    "_id" : NumberInt(69), 
+    "CreditCardId" : NumberInt(69), 
+    "CCName" : "AMEX", 
+    "CCNumber" : "78789007977999", 
+    "CCExpiry" : ISODate("2019-08-22T00:00:00.000+0000"), 
+    "CustomerId" : NumberInt(104)
+},
+{ 
+    "_id" : NumberInt(91), 
+    "CreditCardId" : NumberInt(91), 
+    "CCName" : "AMEX", 
+    "CCNumber" : "904883289756439", 
+    "CCExpiry" : ISODate("2019-01-19T00:00:00.000+0000"), 
+    "CustomerId" : NumberInt(133)
+},
+{ 
+    "_id" : NumberInt(99), 
+    "CreditCardId" : NumberInt(99), 
+    "CCName" : "Diners", 
+    "CCNumber" : "12093458976902", 
+    "CCExpiry" : ISODate("2019-11-02T00:00:00.000+0000"), 
+    "CustomerId" : NumberInt(143)
+},
+{ 
+    "_id" : NumberInt(123), 
+    "CreditCardId" : NumberInt(123), 
+    "CCName" : "Diners", 
+    "CCNumber" : "24348343482482", 
+    "CCExpiry" : ISODate("2020-11-25T00:00:00.000+0000"), 
+    "CustomerId" : NumberInt(109)
+},
+{ 
+    "_id" : NumberInt(141), 
+    "CreditCardId" : NumberInt(141), 
+    "CCName" : "Diners", 
+    "CCNumber" : "3749234924723790", 
+    "CCExpiry" : ISODate("2019-05-01T00:00:00.000+0000"), 
+    "CustomerId" : NumberInt(128)
+},
+{ 
+    "_id" : NumberInt(163), 
+    "CreditCardId" : NumberInt(163), 
+    "CCName" : "Diners", 
+    "CCNumber" : "6788922940392940", 
+    "CCExpiry" : ISODate("2019-10-12T00:00:00.000+0000"), 
+    "CustomerId" : NumberInt(139)
+},
+{ 
+    "_id" : NumberInt(167), 
+    "CreditCardId" : NumberInt(167), 
+    "CCName" : "Diners", 
+    "CCNumber" : "699834387984533", 
+    "CCExpiry" : ISODate("2019-01-04T00:00:00.000+0000"), 
+    "CustomerId" : NumberInt(118)
+},
+{ 
+    "_id" : NumberInt(169), 
+    "CreditCardId" : NumberInt(169), 
+    "CCName" : "Diners", 
+    "CCNumber" : "7482794729742320", 
+    "CCExpiry" : ISODate("2019-04-12T00:00:00.000+0000"), 
+    "CustomerId" : NumberInt(117)
+},
+{ 
+    "_id" : NumberInt(185), 
+    "CreditCardId" : NumberInt(185), 
+    "CCName" : "Diners", 
+    "CCNumber" : "8901128935238970", 
+    "CCExpiry" : ISODate("2019-10-20T00:00:00.000+0000"), 
+    "CustomerId" : NumberInt(141)
+},
+{ 
+    "_id" : NumberInt(201), 
+    "CreditCardId" : NumberInt(201), 
+    "CCName" : "MC", 
+    "CCNumber" : "3424345432894320", 
+    "CCExpiry" : ISODate("2019-01-22T00:00:00.000+0000"), 
+    "CustomerId" : NumberInt(120)
+},
+{ 
+    "_id" : NumberInt(230), 
+    "CreditCardId" : NumberInt(230), 
+    "CCName" : "VISA", 
+    "CCNumber" : "12122387984533", 
+    "CCExpiry" : ISODate("2019-12-13T00:00:00.000+0000"), 
+    "CustomerId" : NumberInt(121)
+},
+{ 
+    "_id" : NumberInt(239), 
+    "CreditCardId" : NumberInt(239), 
+    "CCName" : "VISA", 
+    "CCNumber" : "2311240543980120", 
+    "CCExpiry" : ISODate("2019-11-03T00:00:00.000+0000"), 
+    "CustomerId" : NumberInt(114)
+},
+{ 
+    "_id" : NumberInt(243), 
+    "CreditCardId" : NumberInt(243), 
+    "CCName" : "VISA", 
+    "CCNumber" : "23958389028923", 
+    "CCExpiry" : ISODate("2022-08-22T00:00:00.000+0000"), 
+    "CustomerId" : NumberInt(119)
+},
+{ 
+    "_id" : NumberInt(252), 
+    "CreditCardId" : NumberInt(252), 
+    "CCName" : "VISA", 
+    "CCNumber" : "3456683343353430", 
+    "CCExpiry" : ISODate("2022-10-29T00:00:00.000+0000"), 
+    "CustomerId" : NumberInt(135)
+},
+{ 
+    "_id" : NumberInt(272), 
+    "CreditCardId" : NumberInt(272), 
+    "CCName" : "VISA", 
+    "CCNumber" : "6543254233444530", 
+    "CCExpiry" : ISODate("2022-01-22T00:00:00.000+0000"), 
+    "CustomerId" : NumberInt(122)
+},
+{ 
+    "_id" : NumberInt(279), 
+    "CreditCardId" : NumberInt(279), 
+    "CCName" : "VISA", 
+    "CCNumber" : "78789007977999", 
+    "CCExpiry" : ISODate("2022-08-22T00:00:00.000+0000"), 
+    "CustomerId" : NumberInt(105)
+}
+]

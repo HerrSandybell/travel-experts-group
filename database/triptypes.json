@@ -1,0 +1,17 @@
+[
+{ 
+    "_id" : "B", 
+    "TripTypeId" : "B", 
+    "TTName" : "Business                 "
+},
+{ 
+    "_id" : "G", 
+    "TripTypeId" : "G", 
+    "TTName" : "Group                    "
+},
+{ 
+    "_id" : "L", 
+    "TripTypeId" : "L", 
+    "TTName" : "Leisure                  "
+}
+]

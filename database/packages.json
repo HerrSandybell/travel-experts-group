@@ -1,0 +1,42 @@
+[
+{ 
+    "_id" : NumberInt(1), 
+    "PackageId" : NumberInt(1), 
+    "PkgName" : "Caribbean New Year", 
+    "PkgStartDate" : ISODate("2017-12-25T00:00:00.000+0000"), 
+    "PkgEndDate" : ISODate("2017-01-04T00:00:00.000+0000"), 
+    "PkgDesc" : "Cruise the Caribbean & Celebrate the New Year.", 
+    "PkgBasePrice" : 4800.0, 
+    "PkgAgencyCommission" : 400.0
+},
+{ 
+    "_id" : NumberInt(2), 
+    "PackageId" : NumberInt(2), 
+    "PkgName" : "Polynesian Paradise", 
+    "PkgStartDate" : ISODate("2016-12-12T00:00:00.000+0000"), 
+    "PkgEndDate" : ISODate("2016-12-20T00:00:00.000+0000"), 
+    "PkgDesc" : "8 Day All Inclusive Hawaiian Vacation", 
+    "PkgBasePrice" : 3000.0, 
+    "PkgAgencyCommission" : 310.0
+},
+{ 
+    "_id" : NumberInt(3), 
+    "PackageId" : NumberInt(3), 
+    "PkgName" : "Asian Expedition", 
+    "PkgStartDate" : ISODate("2016-05-14T00:00:00.000+0000"), 
+    "PkgEndDate" : ISODate("2016-05-28T00:00:00.000+0000"), 
+    "PkgDesc" : "Airfaire, Hotel and Eco Tour.", 
+    "PkgBasePrice" : 2800.0, 
+    "PkgAgencyCommission" : 300.0
+},
+{ 
+    "_id" : NumberInt(4), 
+    "PackageId" : NumberInt(4), 
+    "PkgName" : "European Vacation", 
+    "PkgStartDate" : ISODate("2016-11-01T00:00:00.000+0000"), 
+    "PkgEndDate" : ISODate("2016-11-14T00:00:00.000+0000"), 
+    "PkgDesc" : "Euro Tour with Rail Pass and Travel Insurance", 
+    "PkgBasePrice" : 3000.0, 
+    "PkgAgencyCommission" : 280.0
+}
+]

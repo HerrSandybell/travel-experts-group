@@ -1,0 +1,38 @@
+[
+{ 
+    "_id" : "AB", 
+    "StateCode" : "AB", 
+    "CountryCode" : "CA", 
+    "StateName" : "Alberta"
+},
+{ 
+    "_id" : "BC", 
+    "StateCode" : "BC", 
+    "CountryCode" : "CA", 
+    "StateName" : "British Columbia"
+},
+{ 
+    "_id" : "CA", 
+    "StateCode" : "CA", 
+    "CountryCode" : "US", 
+    "StateName" : "California"
+},
+{ 
+    "_id" : "CH", 
+    "StateCode" : "CH", 
+    "CountryCode" : "MX", 
+    "StateName" : "Chihuahua"
+},
+{ 
+    "_id" : "CS", 
+    "StateCode" : "CS", 
+    "CountryCode" : "MX", 
+    "StateName" : "Chiapas"
+},
+{ 
+    "_id" : "WA", 
+    "StateCode" : "WA", 
+    "CountryCode" : "US", 
+    "StateName" : "Washington"
+}
+]
