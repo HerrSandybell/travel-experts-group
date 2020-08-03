@@ -5,9 +5,48 @@
   <%- include('./partials/style-sheets'); %>
   <title>Travel Experts Home</title>
   <style>
-    /* .destination-showcase{
-      display:
-    } */
+    .package-cards-gallery {
+      display: grid;
+      grid-template-columns: auto auto auto;     
+    }
+
+    .package-cards-gallery figure {
+      background-size: cover;
+      position: relative;
+      padding: 0;
+      margin: 10px;
+      /* border: 1px solid rgba(102, 102, 102, 0.616); */
+      border-radius: 15px;
+      box-shadow: 0px 0px 10px gray;
+      width: 300px;
+      height: 400px;
+    }
+
+    .package-cards-gallery figure div {
+      width: 100% !important;
+      margin: 5px;
+    }
+
+    .package-cards-gallery figure span {
+      margin-left: 15px;
+      background: var(--c);
+      color: black;
+      padding: 5px;
+      border-radius: 1em;
+    }
+
+    .package-cards-gallery img {
+      display: none;
+    }
+
+    .package-cards-gallery figcaption {
+      position: absolute;
+      bottom: 0;
+      color: white;
+      font-size: 1.5rem;
+      font-weight: 700;
+      border-radius: 0 0 15px 15px;
+    }
   </style>
 </head>
 
@@ -27,6 +66,7 @@
     </header>
 
     <main class="center flex-column">
+      <h2>Travel Destinations</h2>
       <div class="package-cards-gallery">
 
       </div>

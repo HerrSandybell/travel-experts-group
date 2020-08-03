@@ -4,11 +4,10 @@ let packageCardsGallery = '';
 packagesList.forEach((item => {
   packageCardsGallery += `
   <i href="">
-    <figure>
-      <img src="http://localhost:3000/images/${item.imageFile}" alt="Image of ${item.packageName}">
+    <figure style="background-image: url('http://localhost:3000/images/${item.imageFile}')">
+      <img src="" alt="Image of ${item.packageName}">
       <figcaption>
-        <div>${item.country}</div>
-        <div>Starting from\n${item.packagePrice}</div>
+        <div>${item.country}<span class="price">$${item.packagePrice}+</span></div>
       </figcaption> 
     </figure>
   </i>`;

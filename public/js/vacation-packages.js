@@ -1,9 +1,7 @@
 const vacPackages = document.querySelector('.vacpackages');
 
 packagesList.forEach((packagesList) => {
-  console.log(packagesList);
   vacPackages.innerHTML += `
-  
   <figure> 
         <figcaption> ${packagesList.packageName}</figcaption>
          <img src="http://localhost:3000/images/${packagesList.imageFile}" width="600" height="600">
@@ -12,8 +10,4 @@ packagesList.forEach((packagesList) => {
         <figcaption> Book By: ${packagesList.packageStartDate} </figcaption>
         <figcaption> Valid Until: ${packagesList.packageEndDate} </figcaption>
 	 </figure> `;
-
 });
-
-
-
