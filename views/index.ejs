@@ -15,7 +15,6 @@
       position: relative;
       padding: 0;
       margin: 10px;
-      /* border: 1px solid rgba(102, 102, 102, 0.616); */
       border-radius: 15px;
       box-shadow: 0px 0px 10px gray;
       width: 300px;
@@ -24,13 +23,13 @@
 
     .package-cards-gallery figure div {
       width: 100% !important;
-      margin: 5px;
+      margin: 10px;
     }
 
     .package-cards-gallery figure span {
       margin-left: 15px;
-      background: var(--e);
-      color: black;
+      background: var(--teal);
+      color: white;
       padding: 5px;
       border-radius: 1em;
     }
@@ -43,9 +42,21 @@
       position: absolute;
       bottom: 0;
       color: white;
-      font-size: 1.2rem;
+      font-size: 1.1rem;
       font-weight: 700;
       border-radius: 0 0 15px 15px;
+    }
+
+    .destination-select {
+      background: #040E27;
+      color: white;
+      height: 5em;
+      width: 100%;
+      font-size: 1.4rem;
+    }
+
+    .destination-select label {
+      margin: 0 15px;
     }
   </style>
 </head>
@@ -66,11 +77,20 @@
     </header>
 
     <main class="center flex-column">
-      <h2>Travel Destinations</h2>
-      <div class="package-cards-gallery">
+      <form class="destination-select center">
+        <label>Where do you want to go?</label>
+        <select>
 
+        </select>
+      </form>
+
+      <div class="center flex-column">
+        <h2>Popular Destinations</h2>
+        <p>Escape to paradise.</p>
+        <div class="package-cards-gallery">
+
+        </div>
       </div>
-
     </main>
 
     <%- include('./partials/footer'); %>
@@ -78,6 +98,7 @@
   </div>
   <script src="/js/packages-list.js"></script>
   <script src="/js/package-cards.js"></script>
+  <script src="/js/destination-select.js"></script>
 </body>
 </html>
 

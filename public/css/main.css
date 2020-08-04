@@ -1,15 +1,9 @@
 /***** Themes *******/
 
-body {
-  --a: #8D8741;
-  --b: #659DBD;
-  --c: #DAAD86;
-  --e: #BC986A;
-  --f: #FBEEC1;
-
-  --navh: 5vh;
-  --heroh: 55vh;
-  --cardh: 40vh;
+:root {
+  --darkblue: #040E27;
+  --teal: #1EC6B6;
+  --red: #FF4A52;
 }
 
 nav {
@@ -21,7 +15,7 @@ nav {
 }
 
 .hero-section button {
-  background: white;
+  background: var(--teal);
 }
 
 /***** resets *******/
@@ -43,11 +37,11 @@ nav ul {
 nav a {
   display: block;
 
-  color: var(--a);
+  color: var(--teal);
   font-weight: 700;
 
   padding: 0em 1.0em;
-  line-height: var(--navh);
+  line-height: 3em;
 
   position: relative;
   z-index: 1;
@@ -65,7 +59,7 @@ nav a:after {
   height: 1px;
   content: '.';
   color: transparent;
-  background: var(--c);
+  background: var(--red);
   visibility: none;
   opacity: 0;
   z-index: -1;
@@ -87,7 +81,7 @@ nav a:hover{
   background-image: url('https://picsum.photos/id/1006/3000/2000');
   background-position: center;
   background-size: cover;
-  height: var(--heroh);
+  height: 700px;
 }
 
 .hero-section h1 {
@@ -104,7 +98,7 @@ nav a:hover{
 .hero-section button {
   font-size: 2rem;
   font-weight: 700;
-  mix-blend-mode: screen;
+  color: white;
 
   margin-top: 1rem; 
   padding: 0.5em 0.75em;
@@ -121,7 +115,7 @@ nav a:hover{
   position: absolute;
   width: 50%;
   height: 100%;
-  background-color: var(--c);
+  background-color: var(--red);
   transform: translateY(150%);
   border-radius: 50%;
   left: calc((var(--n) - 1) * 50%);
@@ -158,9 +152,9 @@ nav a:hover{
 /***********************/
 
 
-/* main {
-  width: 1020px;
-} */
+main {
+  width: 100%;
+}
 
 /***** FOOTER *****/
 
@@ -168,17 +162,20 @@ footer {
   width: 100%;
   height: 2.5rem;
 
-  background: var(--b)
+  background: var(--darkblue);
+  color: white;
 }
 
 .gitlogo {
   width: 2em;
   padding: 0.2em;
+  fill: white;
 }
 
 footer a {
   margin-right: 5px;
   text-decoration: none;
+  color: white;
 }
 
 footer a:hover {
