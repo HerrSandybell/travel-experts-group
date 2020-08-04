@@ -5,7 +5,7 @@
   <%- include('./partials/style-sheets'); %>
   <title>Home | Travel Experts</title>
   <style>
-    .package-cards-gallery {
+    /* .package-cards-gallery {
       display: grid;
       grid-template-columns: auto auto auto;     
     }
@@ -45,6 +45,12 @@
       font-size: 1.1rem;
       font-weight: 700;
       border-radius: 0 0 15px 15px;
+    } */
+
+    .popular-destinations * {
+      transition: all var(--transitionTime);
+      color: white;
+      font-size: 1.2rem;
     }
 
     .popular-destinations figure {
@@ -66,6 +72,7 @@
     }
 
     .destination-info {
+      --transitionTime: 500ms;
       justify-content: space-between;
       position: absolute;
       bottom: -300px;
@@ -74,7 +81,6 @@
       border-radius: 0.75em;
       background: rgba(92, 92, 92, 0.7);
       visibility: hidden;
-      transition: bottom 500ms;
     }
 
     .popular-destinations figcaption {
@@ -83,24 +89,38 @@
       margin: 10px;
       padding: 0.3em 0.5em;
       border-radius: 0.75em;
-      color: white;
+
       font-weight: 700;
-      font-size: 1.2rem;
+
       text-decoration: none;
       text-align: center;
       background: var(--teal);
-      transition: all 500ms;
+    }
+
+    .popular-destinations a {
+      display: block;
+
+      padding: 0.3em 0.5em;
+      margin: 15px;
+      background: var(--teal);
+
+      border-radius: 0.75em;
+    }
+
+    .popular-destinations a:hover {
+      background: var(--red);
     }
 
     .popular-destinations figure:hover .destination-info {
       bottom: 0;
-      transition: bottom 500ms;
+      transition: bottom var(--transitionTime);
       visibility: visible;
     }
 
     .popular-destinations figure:hover figcaption {
       background: var(--red);
-      transition: all 500ms;
+      background: none;
+      text-decoration: underline;
     }
 
   </style>
@@ -133,30 +153,28 @@
         <h2>Popular Destinations</h2>
 
         <div class="center">
-          <!-- <a>   -->
             <figure style="background-image: url(/images/1-Caribbean.jpg)" class="location-card">
               <img src="" alt="Image of the Carribbean">
               <div class="destination-info center flex-column">
                 <figcaption figcaption>Caribbean</figcaption>
-                <div>Blue water and golden sands. 5 vacation packages.</div>
-                <a href="VacPack.ejs">Learn More</a>
+                <div>Blue water and golden sands.</div>
+                <a href="VacPack.ejs">5 vacation packages</a>
               </div>
             </figure>
-          <!-- </a> --> 
             <figure style="background-image: url(/images/2-Europe.jpg)" class="location-card">
               <img src="" alt="Image of Europe">
               <div class="destination-info center flex-column">
                 <figcaption>Europe</figcaption>
-                <div>Blue water and golden sands. 5 vacation packages.</div>
-                <a href="VacPack.ejs">Learn More</a>
+                <div>History, culture, and arts.</div>
+                <a href="VacPack.ejs">6 packages</a>
               </div>
             </figure>
             <figure style="background-image: url(/images/3-Mexico.jpg)" class="location-card">
               <img src="" alt="Image of Mexico">
               <div class="destination-info center flex-column">
                 <figcaption>Mexico</figcaption>
-                <div>Blue water and golden sands. 5 vacation packages.</div>
-                <a href="VacPack.ejs">Learn More</a>
+                <div>Luxurious Resorts. Beautiful Beaches.</div>
+                <a href="VacPack.ejs">3 vacation packages</a>
               </div>
             </figure>
         </div>
