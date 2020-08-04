@@ -29,7 +29,7 @@
     "PkgEndDate" : ISODate("2016-05-28T00:00:00.000+0000"), 
     "PkgDesc" : "Airfaire, Hotel and Eco Tour.", 
     "PkgBasePrice" : 2800.0, 
-    "PkgAgencyCommission" : 300.0
+    "PkgAgencyCommission" : 300.0M
 },
 { 
     "_id" : NumberInt(4), 
