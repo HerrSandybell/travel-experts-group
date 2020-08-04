@@ -47,18 +47,14 @@
       border-radius: 0 0 15px 15px;
     }
 
-    .popular-destinations a {
-      margin: 20px;
-
-    }
-
-
     .popular-destinations figure {
       display: flex;
       justify-content: flex-end;
       flex-direction: column;
       background-size: cover;
-      margin: 0;
+      position: relative;
+      overflow: hidden;
+      margin: 20px;
       width: 350px;
       height: 350px;
       border-radius: 10px;
@@ -69,7 +65,20 @@
       display: none;
     }
 
+    .destination-info {
+      justify-content: space-between;
+      position: absolute;
+      bottom: -300px;
+      width: 100%;
+      height: 100%;
+      border-radius: 0.75em;
+      background: rgba(92, 92, 92, 0.7);
+      visibility: hidden;
+      transition: bottom 500ms;
+    }
+
     .popular-destinations figcaption {
+      visibility: visible;
       align-self: center;
       margin: 10px;
       padding: 0.3em 0.5em;
@@ -83,12 +92,13 @@
       transition: all 500ms;
     }
 
-    .popular-destinations figure:hover figcaption {
-      background: var(--red);
-      transition: all 500ms;
+    .popular-destinations figure:hover .destination-info {
+      bottom: 0;
+      transition: bottom 500ms;
+      visibility: visible;
     }
 
-    .popular-destinations figure:hover {
+    .popular-destinations figure:hover figcaption {
       background: var(--red);
       transition: all 500ms;
     }
@@ -123,24 +133,32 @@
         <h2>Popular Destinations</h2>
 
         <div class="center">
-          <a href="VacPack.ejs">  
+          <!-- <a>   -->
             <figure style="background-image: url(/images/1-Caribbean.jpg)" class="location-card">
               <img src="" alt="Image of the Carribbean">
-              <figcaption>Caribbean</figcaption>
+              <div class="destination-info center flex-column">
+                <figcaption figcaption>Caribbean</figcaption>
+                <div>Blue water and golden sands. 5 vacation packages.</div>
+                <a href="VacPack.ejs">Learn More</a>
+              </div>
             </figure>
-          </a>
-          <a href="VacPack.ejs">  
+          <!-- </a> --> 
             <figure style="background-image: url(/images/2-Europe.jpg)" class="location-card">
               <img src="" alt="Image of Europe">
-              <figcaption>Europe</figcaption>
+              <div class="destination-info center flex-column">
+                <figcaption>Europe</figcaption>
+                <div>Blue water and golden sands. 5 vacation packages.</div>
+                <a href="VacPack.ejs">Learn More</a>
+              </div>
             </figure>
-          </a>
-            <a href="VacPack.ejs">  
             <figure style="background-image: url(/images/3-Mexico.jpg)" class="location-card">
               <img src="" alt="Image of Mexico">
-              <figcaption>Mexico</figcaption>
+              <div class="destination-info center flex-column">
+                <figcaption>Mexico</figcaption>
+                <div>Blue water and golden sands. 5 vacation packages.</div>
+                <a href="VacPack.ejs">Learn More</a>
+              </div>
             </figure>
-          </a>
         </div>
       </div>
 
