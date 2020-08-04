@@ -1,6 +1,8 @@
 [
 { 
     "_id" : NumberInt(1), 
+    "RegionID" : ,
+    "image" : ,
     "PackageId" : NumberInt(1), 
     "PkgName" : "Caribbean New Year", 
     "PkgStartDate" : ISODate("2017-12-25T00:00:00.000+0000"), 
