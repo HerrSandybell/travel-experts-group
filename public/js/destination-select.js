@@ -7,4 +7,3 @@ packagesList.forEach((item => {
 }));
 
 destinationSelect.innerHTML = packageCardsGallery;
-// console.log(packageCards);
