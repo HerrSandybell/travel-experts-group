@@ -52,13 +52,6 @@ app.get('/', function(request, response){
   response.render(request.params.path,{});
 });
 
-// app.get('/api/packages', function(request, response) {
-// 	console.log('Get data for all packages');
-// 	Package.find(function(error, packages) {
-// 		response.json(packages);
-// 	});
-// });
-
 app.get('/api/:file', (req, res) => {
   db.collection(req.params.file).find().toArray()
   .then(results => res.json(results))
