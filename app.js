@@ -7,6 +7,7 @@ const moment = require('moment');
 
 const cors = require("cors");
 const Package = require('./models/gallery-model.js');
+const { response } = require('express');
 
 //***********************************************************
 /* Mongoose/MongoDB Connection */
@@ -51,12 +52,17 @@ app.get('/', function(request, response){
   response.render(request.params.path,{});
 });
 
-app.get('/api/packages', function(request, response) {
-	console.log('Get data for all packages');
-	Package.find(function(error, packages) {
-		response.json(packages);
-	});
-});
+// app.get('/api/packages', function(request, response) {
+// 	console.log('Get data for all packages');
+// 	Package.find(function(error, packages) {
+// 		response.json(packages);
+// 	});
+// });
+
+app.get('/api/:file', (req, res) => {
+  db.collection(req.params.file).find().toArray()
+  .then(results => res.json(results))
+})
 
 // if no, send a 404 error as a response to the browser
 app.get('*', function(req, res){
