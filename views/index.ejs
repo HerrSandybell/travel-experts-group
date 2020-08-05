@@ -47,7 +47,17 @@
       border-radius: 0 0 15px 15px;
     } */
 
+    /* .visible-info {
+      bottom: 0;
+      visibility: visible;
+      transition: bottom var(--transitionTime);
+    }
 
+    .visible-info figcaption {
+      background: var(--red);
+      background: none;
+      text-decoration: underline;
+    } */
 
 
   </style>
@@ -59,13 +69,13 @@
     <%- include('./partials/navigation'); %>
 
     <header class="hero-section center flex-column">
-      <h1>WELCOME TO TRAVEL EXPERTS</h1>
+      <h1>TRAVEL EXPERTS</h1>
       <p>Thinking of a last-minute vacation?</p>
     
       <p>Our travel deals can take you there for less!</p> 
-      <button>SIGN UP NOW!
+      <a href="registration">SIGN UP NOW!
         <span></span><span></span><span></span><span></span>
-      </button>
+      </a>
     </header>
 
     <main class="center flex-column">
@@ -88,6 +98,7 @@
                 <a href="VacPack.ejs">5 vacation packages</a>
               </div>
             </figure>
+
             <figure style="background-image: url(/images/2-Europe.jpg)" class="location-card">
               <img src="" alt="Image of Europe">
               <div class="destination-info center flex-column">
@@ -96,6 +107,7 @@
                 <a href="VacPack.ejs">6 packages</a>
               </div>
             </figure>
+
             <figure style="background-image: url(/images/3-Mexico.jpg)" class="location-card">
               <img src="" alt="Image of Mexico">
               <div class="destination-info center flex-column">
@@ -138,6 +150,12 @@
   <script src="/js/packages-list.js"></script>
   <script src="/js/package-cards.js"></script>
   <script src="/js/destination-select.js"></script>
+  <script>
+    const locationCards = document.querySelector('.location-card');
+    const destinationInfo = document.querySelector('.destination-info');
+
+    locationCards.addEventListener('click', e => console.log(e))
+  </script>
 </body>
 </html>
 

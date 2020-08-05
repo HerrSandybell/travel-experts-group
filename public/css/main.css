@@ -14,7 +14,7 @@ nav {
   color: white;
 }
 
-.hero-section button {
+.hero-section a {
   background: var(--teal);
 }
 
@@ -92,7 +92,8 @@ nav a:hover{
   text-align: center;
 }
 
-.hero-section button {
+.hero-section a {
+  display: block;
   font-size: 2rem;
   font-weight: 700;
   color: white;
@@ -121,27 +122,27 @@ nav a:hover{
   z-index: -1;
 }
 
-.hero-section button:hover {
+.hero-section a:hover {
   cursor: pointer;
 }
 
-.hero-section button:hover span {
+.hero-section a:hover span {
   transform: translateY(0) scale(2);
 }
 
-.hero-section button span:nth-child(1) {
+.hero-section a span:nth-child(1) {
   --n: 1;
 }
 
-.hero-section button span:nth-child(2) {
+.hero-section a span:nth-child(2) {
   --n: 2;
 }
 
-.hero-section button span:nth-child(3) {
+.hero-section a span:nth-child(3) {
   --n: 3;
 }
 
-.hero-section button span:nth-child(4) {
+.hero-section a span:nth-child(4) {
   --n: 4;
 }
 
@@ -204,7 +205,7 @@ main {
 
   margin: 20px;
   width: 30%;
-  padding-bottom: 30%;
+  padding-bottom: 30%; /* By combining width with padding bottom and position relative, we ensure a relatively stable and responsive aspect ratio. */
   border-radius: 10px;
   box-shadow: 0px 0px 15px rgb(92, 92, 92);
 }
@@ -247,39 +248,21 @@ main {
   background: var(--teal);
 }
 
+.popular-destinations figure:hover .destination-info {
+  bottom: 0;
+  visibility: visible;
+  transition: bottom var(--transitionTime);
+}
+
 .popular-destinations figure:hover figcaption {
   background: var(--red);
   background: none;
   text-decoration: underline;
 }
 
-.popular-destinations figure:hover .destination-info {
-  bottom: 0;
-  transition: bottom var(--transitionTime);
-  visibility: visible;
-}
-
 .popular-destinations a:hover {
   background: var(--red);
 }
-
-@media (max-width: 600px) {
-
-  .popular-destinations {
-    flex-direction: column;
-  }
-
-  .popular-destinations figure {
-    width: 75%;
-    padding-bottom: 75%;
-  }
-
-  .hot-features {
-    flex-direction: column;
-  }
-}
-
-
 
 /**** Company Features *****/
 .hot-features {
@@ -297,6 +280,35 @@ main {
 .hot-features svg {
   fill: var(--red);
   height: 75px;
+}
+
+/***** RESPONSIVENESS ******/
+
+@media (max-width: 600px) {
+  .hero-section h1 {
+    font-size: 2.5rem;
+  }
+
+  .hero-section p {
+    font-size: 1.2rem;
+  }
+
+  .hero-section a {
+    font-size: 1.5rem;
+  }
+
+  .popular-destinations {
+    flex-direction: column;
+  }
+
+  .popular-destinations figure {
+    width: 75%;
+    padding-bottom: 75%;
+  }
+
+  .hot-features {
+    flex-direction: column;
+  }
 }
 
 /***** FOOTER *****/
@@ -324,3 +336,6 @@ footer a {
 footer a:hover {
   text-decoration: underline;
 }
+
+
+
