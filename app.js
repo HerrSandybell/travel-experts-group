@@ -52,6 +52,7 @@ app.get('/', function(request, response){
   response.render(request.params.path,{});
 });
 
+// Access an collection in the mongoDB
 app.get('/api/:file', (req, res) => {
   db.collection(req.params.file).find().toArray()
   .then(results => res.json(results))
