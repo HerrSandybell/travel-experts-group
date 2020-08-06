@@ -299,6 +299,10 @@ main {
 }
 
 @media (max-width: 800px) {
+  .destination-select * {
+    font-size: 1.3rem;
+  }
+  
   .hot-features h3 {
     font-size: 1.0rem;
   }
@@ -325,6 +329,10 @@ main {
 
   .hero-section .button {
     font-size: 1.5rem;
+  }
+
+  .destination-select * {
+    font-size: 1.1rem;
   }
 
   .popular-destinations {

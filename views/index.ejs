@@ -90,32 +90,7 @@
         <h2>Popular Destinations</h2>
 
         <div class="popular-destinations center">
-            <figure style="background-image: url(/images/1-Caribbean.jpg)" class="location-card">
-              <img src="" alt="Image of the Carribbean">
-              <div class="destination-info center flex-column">
-                <figcaption figcaption>Caribbean</figcaption>
-                <div>Blue water and golden sands.</div>
-                <a class="button" href="VacPack.ejs">5 vacation packages</a>
-              </div>
-            </figure>
 
-            <figure style="background-image: url(/images/2-Europe.jpg)" class="location-card">
-              <img src="" alt="Image of Europe">
-              <div class="destination-info center flex-column">
-                <figcaption>Europe</figcaption>
-                <div>History, culture, and arts.</div>
-                <a class="button" href="VacPack.ejs">6 packages</a>
-              </div>
-            </figure>
-
-            <figure style="background-image: url(/images/3-Mexico.jpg)" class="location-card">
-              <img src="" alt="Image of Mexico">
-              <div class="destination-info center flex-column">
-                <figcaption>Mexico</figcaption>
-                <div>Luxurious Resorts. Beautiful Beaches.</div>
-                <a class="button" href="VacPack.ejs">3 vacation packages</a>
-              </div>
-            </figure>
         </div>
       </div>
 
@@ -147,15 +122,35 @@
     <%- include('./partials/footer'); %>
 
   </div>
-  <script src="/js/packages-list.js"></script>
-  <script src="/js/package-cards.js"></script>
   <script src="/js/destination-select.js"></script>
-  <script>
-    const locationCards = document.querySelector('.location-card');
-    const destinationInfo = document.querySelector('.destination-info');
-
-    locationCards.addEventListener('click', e => console.log(e))
-  </script>
+  <script src="/js/package-cards.js"></script>
 </body>
 </html>
 
+<!-- <figure style="background-image: url(/images/1-Caribbean.jpg)" class="location-card">
+  <img src="" alt="Image of the Carribbean">
+  <div class="destination-info center flex-column">
+    <figcaption figcaption>Caribbean</figcaption>
+    <div>Blue water and golden sands.</div>
+    <a class="button" href="VacPack.ejs">5 vacation packages</a>
+  </div>
+</figure>
+
+<figure style="background-image: url(/images/2-Europe.jpg)" class="location-card">
+  <img src="" alt="Image of Europe">
+  <div class="destination-info center flex-column">
+    <figcaption>Europe</figcaption>
+    <div>History, culture, and arts.</div>
+    <a class="button" href="VacPack.ejs">6 packages</a>
+  </div>
+</figure>
+
+<figure style="background-image: url(/images/3-Mexico.jpg)" class="location-card">
+  <img src="" alt="Image of Mexico">
+  <div class="destination-info center flex-column">
+    <figcaption>Mexico</figcaption>
+    <div>Luxurious Resorts. Beautiful Beaches.</div>
+    <a class="button" href="VacPack.ejs">3 vacation packages</a>
+  </div>
+</figure>
+ -->

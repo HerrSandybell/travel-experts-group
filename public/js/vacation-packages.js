@@ -1,4 +1,3 @@
-
 const vacpackages = document.querySelector('.vacpackages');
 
 fetch('http://localhost:3000/api/packages')
