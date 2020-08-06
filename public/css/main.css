@@ -1,11 +1,5 @@
 /***** Themes *******/
 
-:root {
-  --darkblue: #040E27;
-  --teal: #1EC6B6;
-  --red: #FF4A52;
-}
-
 nav {
   background: white;
 }
@@ -39,98 +33,6 @@ text-decoration: none;
 
 /***** NAV BAR ******/
 
-nav {
-  font-size: 1.1rem;
-  font-weight: 700;
-}
-
-.nav-logo {
-  position: relative;
-  z-index: 1;
-}
-
-/* spreading underline hover effect */
-.nav-logo::after {
-  display: block;
-  position: absolute;
-  bottom: 0;
-  margin: auto;
-  width: 0;
-  height: 2px;
-  content: '.';
-  color: transparent;
-  background: var(--red);
-  visibility: none;
-  opacity: 0;
-  z-index: -1;
-  transition: all .3s;
-}
-.nav-logo:hover::after {
-  opacity: 1;
-  visibility: visible;
-  width: 100%;
-  height: 2px;
-}
-
-.logo {
-  fill: var(--red);
-  height: 3em;
-}
-
-.nav-logo:hover {
-  cursor: pointer;
-}
-
-.travel-experts {
-  display: block;
-  color: var(--darkblue);
-  font-size: 1.2rem;
-  margin: auto 10px;
-  height: 100%;
-}
-
-nav ul {
-  display: flex;
-}
-
-nav ul a {
-  display: block;
-
-  color: var(--teal);
-
-  padding: 0em 1.0em;
-  line-height: 3em;
-
-  position: relative;
-  z-index: 1;
-}
-
-nav ul a:after {
-  display: block;
-  position: absolute;
-  top: 0; /* These for position the animation to come from the center line. */
-  left: 0;
-  bottom: 0;
-  right: 0;
-  margin: auto;
-  width: 100%;
-  height: 1px;
-  content: '.';
-  color: transparent;
-  background: var(--red);
-  visibility: none;
-  opacity: 0;
-  z-index: -1;
-  transition: all .3s;
-}
-nav ul a:hover:after {
-  opacity: 1;
-  visibility: visible;
-  height: 100%;
-}
-nav ul a:hover{
-  color: white;
-}
 
 /**** HERO SECTION *****/
 /***********************/
@@ -143,21 +45,15 @@ nav ul a:hover{
 }
 
 .hero-section h1 {
-  font-size: 3rem;
   text-align: center;
 }
 
 .hero-section p {
-  font-size: 1.5rem;
-  font-weight: 600;
   max-width: 50ch;
   text-align: center;
 }
 
 .hero-section .button {
-  font-size: 2rem;
-  font-weight: 700;
-
   margin-top: 1rem; 
   padding: 0.5em 0.75em;
   border-radius: 8px;
@@ -167,7 +63,7 @@ nav ul a:hover{
   position: relative;
   overflow: hidden;
   z-index: 1;
-  transition: 0.3s;
+  transition: 0.5s;
 }
 
 /* properties for the "curtain" */
@@ -179,7 +75,7 @@ nav ul a:hover{
   transform: translateY(150%);
   border-radius: 50%;
   left: calc((var(--n) - 1) * 50%);
-  transition: 0.3s;
+  transition: 0.5s;
   transition-delay: calc((var(--n) - 1) * 0.1s);
   z-index: -1;
 }
@@ -187,19 +83,15 @@ nav ul a:hover{
 .hero-section .button:hover span {
   transform: translateY(0) scale(2);
 }
-
 .hero-section .button span:nth-child(1) {
   --n: 1;
 }
-
 .hero-section .button span:nth-child(2) {
   --n: 2;
 }
-
 .hero-section .button span:nth-child(3) {
   --n: 3;
 }
-
 .hero-section .button span:nth-child(4) {
   --n: 4;
 }
@@ -223,7 +115,6 @@ main {
   color: white;
   height: 5em;
   width: 100%;
-  font-size: 1.4rem;
 }
 
 .destination-select label {
@@ -247,7 +138,6 @@ main {
 .popular-destinations * {
   transition: all var(--transitionTime);
   color: white;
-  font-size: 1.2rem;
   text-align: center;
   text-decoration: none;
 }
@@ -280,7 +170,7 @@ main {
   --transitionTime: 500ms;
   justify-content: space-between;
   position: absolute;
-  bottom: -75%;
+  bottom: -80%;
   width: 100%;
   height: 100%;
   border-radius: 10px;
@@ -294,7 +184,6 @@ main {
   margin: 10px;
   padding: 0.3em 0.5em;
   border-radius: 0.75em;
-  font-weight: 700;
   background: var(--teal);
 }
 
@@ -348,42 +237,10 @@ main {
 }
 
 @media (max-width: 800px) {
-  .destination-select * {
-    font-size: 1.3rem;
-  }
-  
-  .hot-features h3 {
-    font-size: 1.0rem;
-  }
-  .hot-features div {
-    font-size: 0.8rem;
-  }
+
 }
 
 @media (max-width: 600px) {
-  .hot-features h3 {
-    font-size: 1.3rem;
-  }
-  .hot-features div {
-    font-size: 1rem;
-  }
-
-  .hero-section h1 {
-    font-size: 2.5rem;
-  }
-
-  .hero-section p {
-    font-size: 1.2rem;
-  }
-
-  .hero-section .button {
-    font-size: 1.5rem;
-  }
-
-  .destination-select * {
-    font-size: 1.1rem;
-  }
-
   .popular-destinations {
     flex-direction: column;
   }
@@ -395,10 +252,6 @@ main {
 
   .hot-features {
     flex-direction: column;
-  }
-
-  footer {
-    font-size: 0.75rem;
   }
 }
 
@@ -434,8 +287,6 @@ footer a:hover {
   background-position: center;
   margin:auto;
   padding: -2em;
-  
-
 }
 
 .placement h1{
@@ -446,94 +297,4 @@ footer a:hover {
 .placement h2{
   color: rgb(66, 184, 142);
   text-align: center;
-}
-
-
-.formLogin{
-  height: 400px;
-  width: 400px;
-  position: relative;
-  margin: auto;
-  padding: -2px;
-  background-position: center;
-
-}
-
-#error{
-  text-align: center;
-  color: crimson;
-}
-
-.wrapper{
-
-  background-size: cover;
-  padding: 10em;
-  background-color: yellowgreen;
-
-}
-
-.wrapper h1{
-  text-align: center;
-  margin: 40px auto;
-  margin-top: 2px;
-
-}
-
-.border{
-width: 100px;
-height: 10px;
-margin: 40px auto;
-
-}
-
-.contact-form{
-  max-width: 600px;
-  margin: auto;
-  padding: 0 10px;
-
-}
-
-input{
-
-  display: block;
-  width: 100%;
-  align-items: center;
-  box-sizing: border-box;
-  margin: 40px, 0;
-  background-color: #da9a5e;
-
-}
-
-input: focus{
-  box-shadow: 0 0 10px 4px black;
-}
-
-.contactInfo{
-   text-align: center;
-   text-transform: var(--darkblue);
-   color: rgb(90, 197, 162);
-}
-.contactInfo h2{
-  text-align: center;
-  text-transform: var(--darkblue);
-  color: rgb(90, 197, 162);
-}
-
-textarea.input{
-  resize: none;
-  height:200px;
-  width: 100%;
-}
-
-.button{
-  float: right;
-  background: gray;
-  border-radius: 20px;
-  color: beige;
-  cursor: pointer;
-  transition: 0,5;
-}
-
-.button:hover{
-  background: coral;
 }

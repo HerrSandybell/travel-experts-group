@@ -1,0 +1,150 @@
+/* HAMBURGER MENU */
+
+.hamburger-menu {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+
+  border: 0px;
+  border-radius: 0.3em;
+  margin: 0.5em;
+
+  width: 3em;
+  height: 2.2em;
+
+  background-color: var(--darkblue);
+  fill: var(--teal);
+  transition: 0.3s;
+}
+
+.hamburger-menu:hover {
+  cursor: pointer;
+  fill: var(--red);
+  transition: 0.3s;
+}
+
+/* hamburger menu activation */
+
+nav.visible {
+  position: absolute;
+  top: 0rem;
+  transition: top ease-in 500ms;
+}
+
+@media (max-width: 630px) {
+  nav {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+
+    position: absolute;
+    top: -18em;    /* When screen is too small, hide navbar */
+
+    width: 100%;
+    transition: top ease-out 300ms;
+  }
+
+  nav ul {
+    flex-direction: column;
+    width: 100%;
+    text-align: center;
+  }
+}
+
+@media (min-width: 630px) {
+  .hamburger-menu {
+      display: none;
+  }
+}
+
+/* TRAVEL EXPERT NAV LOGO */
+
+.nav-logo {
+  position: relative;
+  z-index: 1;
+}
+
+/* spreading underline hover effect */
+.nav-logo::after {
+  display: block;
+  position: absolute;
+  bottom: 0;
+  margin: auto;
+  width: 0;
+  height: 2px;
+  content: '.';
+  color: transparent;
+  background: var(--red);
+  visibility: none;
+  opacity: 0;
+  z-index: -1;
+  transition: all .3s;
+}
+.nav-logo:hover::after {
+  opacity: 1;
+  visibility: visible;
+  width: 100%;
+  height: 2px;
+}
+
+.logo {
+  fill: var(--red);
+  height: 3em;
+}
+
+.nav-logo:hover {
+  cursor: pointer;
+}
+
+.travel-experts {
+  display: block;
+  color: var(--darkblue);
+  margin: auto 10px;
+  height: 100%;
+}
+
+/* NAV MENU */
+
+nav ul {
+  display: flex;
+}
+
+nav ul a {
+  display: block;
+
+  color: var(--teal);
+
+  padding: 0em 1.0em;
+  line-height: 3em;
+
+  position: relative;
+  z-index: 1;
+}
+
+nav ul a:after {
+  display: block;
+  position: absolute;
+  top: 0; /* These for position the animation to come from the center line. */
+  left: 0;
+  bottom: 0;
+  right: 0;
+  margin: auto;
+  width: 100%;
+  height: 1px;
+  content: '.';
+  color: transparent;
+  background: var(--red);
+  visibility: none;
+  opacity: 0;
+  z-index: -1;
+  transition: all .3s;
+}
+nav ul a:hover:after {
+  opacity: 1;
+  visibility: visible;
+  height: 100%;
+}
+nav ul a:hover{
+  color: white;
+}

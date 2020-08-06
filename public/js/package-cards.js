@@ -22,6 +22,4 @@ fetch('http://localhost:3000/api/packages')
     }
 
     document.querySelector('.popular-destinations').innerHTML = popularDestinations;
-
-    console.log(popularDestinations)
   })

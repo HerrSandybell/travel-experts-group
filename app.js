@@ -66,6 +66,7 @@ app.use(
 		extended: true
 	})
 );
+
 app.post('/registration', function(req, res) {
 	var name = req.body.fullName;
 	var email = req.body.Email;
@@ -76,20 +77,20 @@ app.post('/registration', function(req, res) {
 	var homePhone = req.body.homePhone;
 
 	var data = {
-		CustFullName: name,
-		CustEmail: email,
-		CustUserName: userName,
-		CustPassword: pass,
-		CustAddress: address,
-		CustCellPhone: cellPhone,
-		CustHomePhone: homePhone
+		CustomerFullName: name,
+		CustomerEmail: email,
+		CustomerUserName: userName,
+		CustomerPassword: pass,
+		CustomerAddress: address,
+		CustomerCellPhone: cellPhone,
+		CustomerHomePhone: homePhone
 	};
 	db.collection('customers').insertOne(data, function(err, collection) {
 		if (err) throw err;
 		console.log('Record inserted Successfully');
 	});
 
-	res.render('registrationDone', { message: 'Thank you, your registraion  has been successfully completed' });
+	res.render('registrationDone', { message: 'Thank you, your registration has been successfully completed' });
 });
 
 // if no, send a 404 error as a response to the browser
