@@ -44,10 +44,47 @@ label.required::after {
   background: var(--darkblue);
 }
 
-form div {
+.input-field {
   display: flex;
   flex-direction: column;
   align-items: center;
+  position: relative;
+}
+
+/***** TOOLTIPS *****/
+
+[role="tooltip"] {
+  display: inline-block;
+  white-space: nowrap;
+
+  padding: 0.5em 0.8em;
+  background: white;
+
+  font-weight: 700;
+  color: black;
+
+  border: 1px solid black;
+  border-radius: 1em;
+
+  position: absolute; /* Position this element relative to the div it's in. In combination with a relative parent, it is position relative to that parent. */
+  left: 100%;
+
+  transform: scale(0); /* Essentially: This is display none */
+
+  transition: transform ease-out 100ms; 
+}
+
+/* When an input field is focused and invalid, apply this css to the next tool-tip */
+input:invalid:focus + [role="tooltip"] {
+  transform: scale(1);
+}
+
+@media (max-width: 700px) {
+  span[role="tooltip"] {
+    left: 0;
+    bottom: 3em;
+    z-index: 1;
+  } 
 }
 
 /**** CONTACT US ****/
