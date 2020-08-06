@@ -1,17 +1,27 @@
-const packageCards = document.querySelector('.package-cards-gallery');
-let packageCardsGallery = '';
+fetch('http://localhost:3000/api/packages')
+	.then(response => {
+		if (!response.ok) throw new Error('No data found');
+		return response.json();
+  })
+  .then(packages => {
+    let randomPackage;
 
-packagesList.forEach((item => {
-  packageCardsGallery += `
-  <i href="">
-    <figure style="background-image: url('http://localhost:3000/images/${item.imageFile}')">
-      <img src="" alt="Image of ${item.packageName}">
-      <figcaption>
-        <div>${item.country}<span class="price">$${item.packagePrice}+</span></div>
-      </figcaption> 
-    </figure>
-  </i>`;
-}));
+    let popularDestinations = '';
 
-packageCards.innerHTML = packageCardsGallery;
-console.log(packageCards);
+    for (i=0 ; i<3 ; i++) {
+      randomPackage = packages.splice(Math.floor(Math.random()*packages.length), 1)
+      popularDestinations += `
+        <figure style="background-image: url('/images/${randomPackage[0].imageFile}')" class="location-card">
+          <img src="" alt="Image of ${randomPackage[0].packageName}">
+          <div class="destination-info center flex-column">
+            <figcaption figcaption>${randomPackage[0].packageName}</figcaption>
+            <div>Blue water and golden sands.</div>
+            <a class="button" href="VacPack.ejs">5 vacation packages</a>
+          </div>
+        </figure>`
+    }
+
+    document.querySelector('.popular-destinations').innerHTML = popularDestinations;
+
+    console.log(popularDestinations)
+  })

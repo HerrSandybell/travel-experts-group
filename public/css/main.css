@@ -14,8 +14,21 @@ nav {
   color: white;
 }
 
-.hero-section button {
+.hero-section a {
   background: var(--teal);
+}
+
+.button {
+  display: block;
+  padding: 0.3em 0.5em;
+  border-radius: 0.5em;
+  background: var(--teal);
+  color: white;
+}
+
+.button:hover {
+  background: var(--red);
+  cursor: pointer;
 }
 
 /***** resets *******/
@@ -26,15 +39,64 @@ text-decoration: none;
 
 /***** NAV BAR ******/
 
+nav {
+  font-size: 1.1rem;
+  font-weight: 700;
+}
+
+.nav-logo {
+  position: relative;
+  z-index: 1;
+}
+
+/* spreading underline hover effect */
+.nav-logo::after {
+  display: block;
+  position: absolute;
+  bottom: 0;
+  margin: auto;
+  width: 0;
+  height: 2px;
+  content: '.';
+  color: transparent;
+  background: var(--red);
+  visibility: none;
+  opacity: 0;
+  z-index: -1;
+  transition: all .3s;
+}
+.nav-logo:hover::after {
+  opacity: 1;
+  visibility: visible;
+  width: 100%;
+  height: 2px;
+}
+
+.logo {
+  fill: var(--red);
+  height: 3em;
+}
+
+.nav-logo:hover {
+  cursor: pointer;
+}
+
+.travel-experts {
+  display: block;
+  color: var(--darkblue);
+  font-size: 1.2rem;
+  margin: auto 10px;
+  height: 100%;
+}
+
 nav ul {
   display: flex;
 }
 
-nav a {
+nav ul a {
   display: block;
 
   color: var(--teal);
-  font-weight: 700;
 
   padding: 0em 1.0em;
   line-height: 3em;
@@ -43,7 +105,7 @@ nav a {
   z-index: 1;
 }
 
-nav a:after {
+nav ul a:after {
   display: block;
   position: absolute;
   top: 0; /* These for position the animation to come from the center line. */
@@ -61,12 +123,12 @@ nav a:after {
   z-index: -1;
   transition: all .3s;
 }
-nav a:hover:after {
+nav ul a:hover:after {
   opacity: 1;
   visibility: visible;
   height: 100%;
 }
-nav a:hover{
+nav ul a:hover{
   color: white;
 }
 
@@ -92,22 +154,23 @@ nav a:hover{
   text-align: center;
 }
 
-.hero-section button {
+.hero-section .button {
   font-size: 2rem;
   font-weight: 700;
-  color: white;
 
   margin-top: 1rem; 
   padding: 0.5em 0.75em;
   border-radius: 8px;
   border: none;
 
+  /* Cool hover special effect */
   position: relative;
   overflow: hidden;
   z-index: 1;
   transition: 0.3s;
 }
 
+/* properties for the "curtain" */
 .hero-section span {
   position: absolute;
   width: 50%;
@@ -121,27 +184,23 @@ nav a:hover{
   z-index: -1;
 }
 
-.hero-section button:hover {
-  cursor: pointer;
-}
-
-.hero-section button:hover span {
+.hero-section .button:hover span {
   transform: translateY(0) scale(2);
 }
 
-.hero-section button span:nth-child(1) {
+.hero-section .button span:nth-child(1) {
   --n: 1;
 }
 
-.hero-section button span:nth-child(2) {
+.hero-section .button span:nth-child(2) {
   --n: 2;
 }
 
-.hero-section button span:nth-child(3) {
+.hero-section .button span:nth-child(3) {
   --n: 3;
 }
 
-.hero-section button span:nth-child(4) {
+.hero-section .button span:nth-child(4) {
   --n: 4;
 }
 
@@ -204,7 +263,7 @@ main {
 
   margin: 20px;
   width: 30%;
-  padding-bottom: 30%;
+  padding-bottom: 30%; /* By combining width with padding bottom and position relative, we ensure a relatively stable and responsive aspect ratio. */
   border-radius: 10px;
   box-shadow: 0px 0px 15px rgb(92, 92, 92);
 }
@@ -239,44 +298,19 @@ main {
   background: var(--teal);
 }
 
-.popular-destinations a {
-  display: block;
-  padding: 0.3em 0.5em;
+.popular-destinations .button {
   margin: 15px;
-  border-radius: 0.75em;
-  background: var(--teal);
-}
-
-.popular-destinations figure:hover figcaption {
-  background: var(--red);
-  background: none;
-  text-decoration: underline;
 }
 
 .popular-destinations figure:hover .destination-info {
   bottom: 0;
-  transition: bottom var(--transitionTime);
   visibility: visible;
+  transition: bottom var(--transitionTime);
 }
 
-.popular-destinations a:hover {
-  background: var(--red);
-}
-
-@media (max-width: 600px) {
-
-  .popular-destinations {
-    flex-direction: column;
-  }
-
-  .popular-destinations figure {
-    width: 75%;
-    padding-bottom: 75%;
-  }
-
-  .hot-features {
-    flex-direction: column;
-  }
+.popular-destinations figure:hover figcaption {
+  background: none;
+  text-decoration: underline;
 }
 
 
@@ -297,6 +331,75 @@ main {
 .hot-features svg {
   fill: var(--red);
   height: 75px;
+}
+
+/***** RESPONSIVENESS ******/
+
+@media (hover: none) and (pointer: coarse) {
+  .destination-info {
+    bottom: 0;
+    visibility: visible;
+  }
+
+  .destination-info figcaption {
+    background: none;
+    text-decoration: underline;
+  }
+}
+
+@media (max-width: 800px) {
+  .destination-select * {
+    font-size: 1.3rem;
+  }
+  
+  .hot-features h3 {
+    font-size: 1.0rem;
+  }
+  .hot-features div {
+    font-size: 0.8rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .hot-features h3 {
+    font-size: 1.3rem;
+  }
+  .hot-features div {
+    font-size: 1rem;
+  }
+
+  .hero-section h1 {
+    font-size: 2.5rem;
+  }
+
+  .hero-section p {
+    font-size: 1.2rem;
+  }
+
+  .hero-section .button {
+    font-size: 1.5rem;
+  }
+
+  .destination-select * {
+    font-size: 1.1rem;
+  }
+
+  .popular-destinations {
+    flex-direction: column;
+  }
+
+  .popular-destinations figure {
+    width: 75%;
+    padding-bottom: 75%;
+  }
+
+  .hot-features {
+    flex-direction: column;
+  }
+
+  footer {
+    font-size: 0.75rem;
+  }
 }
 
 /***** FOOTER *****/
