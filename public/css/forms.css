@@ -1,3 +1,68 @@
+.contact-us {
+  display: flex;
+  justify-content: center;
+  margin: 1.3em;
+  border: 5px solid var(--teal);
+  border-radius: 1em;
+  background: var(--darkblue);
+  color: white;
+}
+
+fieldset {
+  border: none;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+legend {
+  display: inline-block;
+  margin: 0.8em 0;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+.wrapper {
+  width: 25em;
+  /* height: 20em; */
+  padding: 1em;
+}
+
+.contact-info {
+  border-right: 3px solid darkgray;
+}
+
+.contact-info span {
+  text-decoration: underline;
+  font-style: italic;
+  font-weight: 700;
+}
+
+.button-container {
+  margin: 0.8em;
+}
+
+form button {
+  margin: 0.8em;
+}
+
+@media (max-width: 750px) {
+  .contact-us {
+    flex-direction: column;
+  }
+
+  .contact-info {
+    border-right: none;
+    border-bottom: 3px solid darkgray;
+  }
+}
+
+/* 
 .form{
   height: 85%;
   width: 400px;
@@ -24,7 +89,6 @@
   margin: auto;
   padding: -2px;
   background-position: center;
-
 }
 
 #error{
@@ -33,43 +97,36 @@
 }
 
 .wrapper{
-
   background-size: cover;
   padding: 10em;
   background-color: yellowgreen;
-
 }
 
 .wrapper h1{
   text-align: center;
   margin: 40px auto;
   margin-top: 2px;
-
 }
 
 .border{
-width: 100px;
-height: 10px;
-margin: 40px auto;
-
+  width: 100px;
+  height: 10px;
+  margin: 40px auto;
 }
 
 .contact-form{
   max-width: 600px;
   margin: auto;
   padding: 0 10px;
-
 }
 
 input{
-
   display: block;
   width: 100%;
   align-items: center;
   box-sizing: border-box;
   margin: 40px, 0;
   background-color: #da9a5e;
-
 }
 
 input:focus{
@@ -77,9 +134,9 @@ input:focus{
 }
 
 .contactInfo{
-   text-align: center;
-   text-transform: var(--darkblue);
-   color: rgb(90, 197, 162);
+  text-align: center;
+  text-transform: var(--darkblue);
+  color: rgb(90, 197, 162);
 }
 .contactInfo h2{
   text-align: center;
@@ -104,4 +161,4 @@ textarea.input{
 
 .button:hover{
   background: coral;
-}
+} */

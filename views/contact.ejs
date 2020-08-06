@@ -12,40 +12,47 @@
 
     <%- include('./partials/navigation'); %>
 
-    <header class="center flex-column">
-      <h1>WELCOME TO TRAVEL EXPERTS</h1>
-      <a href="registration.ejs"><button>SIGN UP NOW!</button></a>
+    <header class="hero-section center flex-column">
+      <h1>TRAVEL EXPERTS</h1>
+      <a class="button" href="registration">SIGN UP NOW!
+        <span></span><span></span><span></span><span></span>
+      </a>
     </header>
 
-      <div class="contactInfo">
-        <h2>
-            Contact Us
-        </h2>
-        <p>Office phone Number:    (+1)306-205-4567</p>
-        <p>Email Address:   Travelexperts@t2p.ca</p>
-        <p>Office Address:  404 Money Street S, Zion, Olympus.</p>
-        <p>Postal Code:     Z4P 419</p>
-      
-      </div>
-      <div class="wrapper" action="/" method="post">
-        <h1>Got Questions?</h1>
-        <div class="border"></div>
-        <form id="contact-form">
+    <main class="center">
+
+      <div class="contact-us">
+
+        <div class="wrapper contact-info">
+          <h2>Contact Us</h2>
+          <div><span>Office phone Number:</span> (+1)306-205-4567</div></br>
+          <div><span>Email Address:</span> Travelexperts@t2p.ca</div></br>
+          <div><span>Office Address:</span> 404 Money Street S, Zion, Olympus.</div></br>
+          <div><span>Postal Code:</span> Z4P 419</div>
+        </div>
+
+        
+        <form class="wrapper contact-form" action="/contact-us" method="post">
+          <fieldset>
+            <legend>Contact Form</legend> 
             <input placeholder="name"  class="input" type="text" id = "name" name="fullName" required pattern="[a-zA-Z]{1,} [a-zA-Z]{1,}" title="Please enter a valid name">
             <input placeholder="subject"  class="input" type="text" id=subject" name="SubJect" required pattern="[a-zA-Z]{1,} [a-zA-Z]{1,}" title="Please fill out subject">
             <input placeholder="email"  class="input" type="email" id="email" name="Email" required autofocus pattern="[a-zA-Z0-9_]{3,}@[a-zA-Z0-9]{3,}[.]{1}[a-zA-Z]{2,}" title="Please enter a valid email">
             <textarea placeholder="Enter text here"  class="input" id="message" name="Text" required autofocus pattern="[a-zA-Z]{1,} [a-zA-Z]{1,}"></textarea>
-
-            <button class= "button" type="reset">Reset</button>
-            <button type="submit" class= "button" id="submit">Submit</button>   
+            <div class="button-container center">
+              <button type="submit" class= "button" id="submit">Submit</button>   
+              <button class= "button" type="reset">Reset</button>
+            </div>
+          </fieldset>
         </form>
-      </div> 
-     
+
+      </div>
+
+    </main> 
 
     <%- include('./partials/footer'); %>
 
   </div>
-  <script>
-  </script>
+  <%- include('./partials/scripts'); %>
 </body>
 </html>
