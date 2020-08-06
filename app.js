@@ -4,8 +4,9 @@ const express = require('express');
 const mongoose = require("mongoose");
 const dotenv = require("dotenv");
 const moment = require('moment');
-
 const cors = require("cors");
+var bodyParser = require('body-parser');
+
 const Package = require('./models/gallery-model.js');
 const { response } = require('express');
 
@@ -57,6 +58,39 @@ app.get('/api/:file', (req, res) => {
   db.collection(req.params.file).find().toArray()
   .then(results => res.json(results))
 })
+
+// Registration form  data transfer to database & confirmation message to registration page.
+app.use(bodyParser.json());
+app.use(
+	bodyParser.urlencoded({
+		extended: true
+	})
+);
+app.post('/registration', function(req, res) {
+	var name = req.body.fullName;
+	var email = req.body.Email;
+	var userName = req.body.username;
+	var pass = req.body.Password;
+	var address = req.body.address;
+	var cellPhone = req.body.businessPhone;
+	var homePhone = req.body.homePhone;
+
+	var data = {
+		CustFullName: name,
+		CustEmail: email,
+		CustUserName: userName,
+		CustPassword: pass,
+		CustAddress: address,
+		CustCellPhone: cellPhone,
+		CustHomePhone: homePhone
+	};
+	db.collection('customers').insertOne(data, function(err, collection) {
+		if (err) throw err;
+		console.log('Record inserted Successfully');
+	});
+
+	res.render('registrationDone', { message: 'Thank you, your registraion  has been successfully completed' });
+});
 
 // if no, send a 404 error as a response to the browser
 app.get('*', function(req, res){
