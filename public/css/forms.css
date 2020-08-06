@@ -30,13 +30,13 @@ form .button {
   margin: 0.8em;
 }
 
+label.required::after {
+  content: '*';
+  color: var(--red);
+}
+
 
 /****  REGISTRATION/LOGIN ****/
-
-/* fieldset {
-
-
-} */
 
 .register-login {
   border: 5px solid var(--teal);
