@@ -8,8 +8,7 @@ burgerBtn.addEventListener("click", function() {
 
 // This event listener detects clicks outside of the burger menu and hides the navbar.
 window.addEventListener('click', function(e) {
-
-    if (e.target != document.querySelector('.hamburger-menu') && e.target != document.querySelector('.hamburger-menu path') && e.target != document.querySelector('.hamburger-menu svg') && e.target != document.querySelector('nav')) {
-      navBar.classList.remove('visible');
-    }
+  if (e.target != document.querySelector('.hamburger-menu') && e.target != document.querySelector('.hamburger-menu path') && e.target != document.querySelector('.hamburger-menu svg') && e.target != document.querySelector('nav')) {
+    navBar.classList.remove('visible');
+  }
 });
