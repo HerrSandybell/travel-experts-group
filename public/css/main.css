@@ -324,3 +324,113 @@ footer a {
 footer a:hover {
   text-decoration: underline;
 }
+
+.form{
+  height: 85%;
+  width: 400px;
+  background-position: center;
+  margin:auto;
+  padding: -2em;
+  
+
+}
+
+.placement h1{
+  color: rgb(66, 184, 142);
+  text-align: center;
+}
+
+.placement h2{
+  color: rgb(66, 184, 142);
+  text-align: center;
+}
+
+
+.formLogin{
+  height: 400px;
+  width: 400px;
+  position: relative;
+  margin: auto;
+  padding: -2px;
+  background-position: center;
+
+}
+
+#error{
+  text-align: center;
+  color: crimson;
+}
+
+.wrapper{
+
+  background-size: cover;
+  padding: 10em;
+  background-color: yellowgreen;
+
+}
+
+.wrapper h1{
+  text-align: center;
+  margin: 40px auto;
+  margin-top: 2px;
+
+}
+
+.border{
+width: 100px;
+height: 10px;
+margin: 40px auto;
+
+}
+
+.contact-form{
+  max-width: 600px;
+  margin: auto;
+  padding: 0 10px;
+
+}
+
+input{
+
+  display: block;
+  width: 100%;
+  align-items: center;
+  box-sizing: border-box;
+  margin: 40px, 0;
+  background-color: #da9a5e;
+
+}
+
+input: focus{
+  box-shadow: 0 0 10px 4px black;
+}
+
+.contactInfo{
+   text-align: center;
+   text-transform: var(--darkblue);
+   color: rgb(90, 197, 162);
+}
+.contactInfo h2{
+  text-align: center;
+  text-transform: var(--darkblue);
+  color: rgb(90, 197, 162);
+}
+
+textarea.input{
+  resize: none;
+  height:200px;
+  width: 100%;
+}
+
+.button{
+  float: right;
+  background: gray;
+  border-radius: 20px;
+  color: beige;
+  cursor: pointer;
+  transition: 0,5;
+}
+
+.button:hover{
+  background: coral;
+}
