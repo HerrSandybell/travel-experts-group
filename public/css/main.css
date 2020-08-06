@@ -38,9 +38,6 @@ text-decoration: none;
 /***********************/
 
 .hero-section {
-  background-image: url('https://picsum.photos/id/1006/3000/2000');
-  background-position: center;
-  background-size: cover;
   height: 700px;
 }
 
@@ -107,6 +104,12 @@ main {
 .container {
   width: 100%;
   max-width: 1000px;
+}
+
+.background {
+  background-image: url('https://picsum.photos/id/1006/3000/2000');
+  background-position: center;
+  background-size: cover;
 }
 
 /**** Destination Selector *****/

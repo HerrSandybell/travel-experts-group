@@ -16,63 +16,62 @@
     
     </header>
 
-    <main>
-      <div class="placement">
-        <h1>REGISTER HERE</h1>
-      </div>
+    <main class="center background">
 
       <div id="error"></div>
         
-      <form id= "form" action="/registration" method="POST">
+      <form class="register-login" id="form" action="/registration" method="POST">
         <fieldset>
           <legend><h3>Registration Form</h3></legend>
-          <label>
-            Full Name:
+          <div id="name">
+            <label for="fullName">Full Name:</label>
             <input type="text" id="fullName" name="fullName" required>
-          </label>
-          <label>
-            Email Address:
-            <input type="email" id="Email" name="Email" required>
-          </label>
-          <label>
-            Username:
+          </div>                  
+          <div id="user-email">
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+          </div>                  
+          <div id="user-name">
+            <label for="username">Username:</label>
             <input type="username" id="username" name="username" required>
-          </label>
-          <label>
-            Password:
-            <input type="password" id="Password" name="Password" required>
-          </label> 
-          <label>
-            Confirm Password:
-            <input type="password" id="confirmPassword" name="confirmPassword">
-          </label>
-          <label>
-            Address:
+          </div>                  
+          <div id="user-password">
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required>
+          </div>                   
+          <div id="confirm-password">
+            <label for="confirm-password">Confirm Password:</label>
+            <input type="password" id="confirm-password" name="confirm-password" required>
+          </div>                  
+          <div id="user-address">
+            <label for="address
+            address">Address:</label>
             <input type="address" id="address" name="address" required>
-          </label>
-          <label>
-            Cell phone:
-            <input type="" id="businessPhone" name="businessPhone" required>
-          </label>
-          <label>
-            Home phone:
-            <input type="" id="homePhone" name="homePhone" required>
-          </label> 
-          <div class="button-container center">
-            <button type="reset">Reset</button>
-            <button type="submit" id="submit">Submit</button>
-          </div>
+          </div>                  
+          <div id="cell-phone">
+            <label for="business-phone">Cell phone:</label>
+            <input type="" id="business-phone" name="business-phone" required>
+          </div>                  
+          <div id="home-phone">
+            <label for="home-phone">Home phone:</label>
+            <input type="" id="home-phone" name="home-phone">
+          </div>                   
+          <section class="button-container center">
+            <button class="button" type="submit" id="submit">Submit</button>
+            <button class="button" type="reset">Reset</button>
+          </section>
         </fieldset>
       </form>
+
       <!--Message for registration confirmation-->
       <% if(message==''){ %>
         <h2></h2>
-     <% }
+      <% }
 
       else
       { %>
         <h2><%= message %></h2>
-     <% } %>
+      <% } %>
 
     </main>
           

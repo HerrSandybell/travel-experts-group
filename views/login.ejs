@@ -12,23 +12,25 @@
 
     <%- include('./partials/navigation'); %>
 
-  <main>
-    <div class="placement">
-      <h2>Login Here</h2>
-    </div>
+  <main class="center background">
 
     <div id="error"></div>
-    <form class = "formLogin" action="/" method="GET">
-        <fieldset>
-            <legend><h3>Login</h3></legend>
-            <p>Username:<input id="username" type="username" name="username" required autofocus pattern="[a-zA-Z0-9]" title="please enter a valid username"></p>
-            <p>Password:<input id="Password" type="password" name="Password" required></p>
-        
-            <div class="button-container center">
-              <button type="reset">Reset</button>
-              <button type="submit" id="submit">Submit</button>
-            </div>
-        </fieldset>     
+    <form class="register-login" action="/" method="GET">
+      <fieldset>
+        <legend>Login</legend>
+        <div>  
+          <label>Username:</label>
+          <input id="username" type="username" name="username" required autofocus pattern="[a-zA-Z0-9]" title="please enter a valid username">
+        </div>
+        <div>
+          <label>Password:</label>
+          <input id="Password" type="password" name="Password" required>
+        </div>
+        <section class="button-container center">
+          <button class="button" type="submit" id="submit">Submit</button>
+          <button class="button" type="reset">Reset</button>
+        </section>
+      </fieldset>     
     </form>
   </main>
 
