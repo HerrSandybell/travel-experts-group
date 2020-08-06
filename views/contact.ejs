@@ -13,22 +13,33 @@
 
     <header class="center flex-column">
       <h1>WELCOME TO TRAVEL EXPERTS</h1>
-      <button>SIGN UP NOW!</button>
+      <a href="registration.ejs"><button>SIGN UP NOW!</button></a>
     </header>
 
-    <main>
-      <fieldset>
+      <div class="contactInfo">
         <h2>
-            <legend>Contact Us
-
-            </legend>
+            Contact Us
         </h2>
         <p>Office phone Number:    (+1)306-205-4567</p>
         <p>Email Address:   Travelexperts@t2p.ca</p>
         <p>Office Address:  404 Money Street S, Zion, Olympus.</p>
         <p>Postal Code:     Z4P 419</p>
-      </fieldset>
-    </main>
+      
+      </div>
+      <div class="wrapper" action="/" method="post">
+        <h1>Got Questions?</h1>
+        <div class="border"></div>
+        <form id="contact-form">
+            <input placeholder="name"  class="input" type="text" id = "name" name="fullName" required pattern="[a-zA-Z]{1,} [a-zA-Z]{1,}" title="Please enter a valid name">
+            <input placeholder="subject"  class="input" type="text" id=subject" name="SubJect" required pattern="[a-zA-Z]{1,} [a-zA-Z]{1,}" title="Please fill out subject">
+            <input placeholder="email"  class="input" type="email" id="email" name="Email" required autofocus pattern="[a-zA-Z0-9_]{3,}@[a-zA-Z0-9]{3,}[.]{1}[a-zA-Z]{2,}" title="Please enter a valid email">
+            <textarea placeholder="Enter text here"  class="input" id="message" name="Text" required autofocus pattern="[a-zA-Z]{1,} [a-zA-Z]{1,}"></textarea>
+
+            <button class= "button" type="reset">Reset</button>
+            <button type="submit" class= "button" id="submit">Submit</button>   
+        </form>
+      </div> 
+     
 
     <%- include('./partials/footer'); %>
 
