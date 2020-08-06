@@ -17,15 +17,15 @@
     </div>
 
     <div id="error"></div>
-    <form id = "form" action="/" method="GET">
+    <form class = "formLogin" action="/" method="GET">
         <fieldset>
             <legend><h3>Login</h3></legend>
-            <p>Username:<input id="username" type="username" name="username" required></p>
+            <p>Username:<input id="username" type="username" name="username" required autofocus pattern="[a-zA-Z0-9]" title="please enter a valid username"></p>
             <p>Password:<input id="Password" type="password" name="Password" required></p>
         
 
             <button type="reset">Reset</button>
-            <button type="submit" id= "submit">Submit</button>
+            <button type="submit" id= "submit">Login</button>
 
         </fieldset>     
     </form>
@@ -34,8 +34,6 @@
   <%- include('./partials/footer'); %>
 
   </div>
-  <script>
-  </script>
 </body>
 </html>
 
