@@ -50,7 +50,7 @@ app.get('/', function(request, response){
 
 // Access any ejs/html file in the views folder.
  app.get('/:path', function(request, response){
-  response.render(request.params.path,{});
+  response.render(request.params.path,{ message:''});
 });
 
 // Access a collection in the mongoDB
@@ -89,7 +89,7 @@ app.post('/registration', function(req, res) {
 		console.log('Record inserted Successfully');
 	});
 
-	res.render('registrationDone', { message: 'Thank you, your registraion  has been successfully completed' });
+	res.render('registration', { message: 'Thank you, your registration  has been successfully completed' });
 });
 
 // if no, send a 404 error as a response to the browser
