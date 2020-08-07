@@ -54,8 +54,8 @@ app.get('/', function(request, response){
 });
 
 // Access a collection in the mongoDB
-app.get('/api/:file', (req, res) => {
-  db.collection(req.params.file).find().toArray()
+app.get('/api/:coll', (req, res) => {
+  db.collection(req.params.coll).find().toArray()
   .then(results => res.json(results))
 })
 

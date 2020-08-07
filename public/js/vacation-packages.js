@@ -1,4 +1,4 @@
-const vacpackages = document.querySelector('.vacpackages');
+const vacPackages = document.querySelector('.vac-packages');
 
 fetch('http://localhost:3000/api/packages')
 	.then((response) => {
@@ -7,18 +7,19 @@ fetch('http://localhost:3000/api/packages')
   })
   .then((packages) => {
 		for (let packagesList of packages) {
-      vacpackages.innerHTML += `
-        <figure> 
-              <figcaption> ${packagesList.packageName}</figcaption>
-               <img src="http://localhost:3000/images/${packagesList.imageFile}" width="600" height="600">
-               <figcaption> Description: ${packagesList.packagedDescription} </figcaption> 
-              <figcaption> Package Starting Price($): ${packagesList.packagePrice} </figcaption>
-              <figcaption> Book By: ${packagesList.packageStartDate} </figcaption>
-              <figcaption> Valid Until: ${packagesList.packageEndDate} </figcaption>
-              <figcaption> Region : ${packagesList.RegionID} </figcaption>
-              <figcaption> Commission: ${packagesList.packageAgencyComission} </figcaption>
-      	 </figure> `;  
-      		}
+      vacPackages.innerHTML += `
+        <figure class="package-container" id="${packagesList.Id}"> 
+          <div style="background-image: url('http://localhost:3000/images/${packagesList.imageFile}')"><img src="" width="300" height="300"></div>
+          <figcaption>
+            <h2>${packagesList.packageName}</h2>
+            <p class="description">${packagesList.packagedDescription}</p> 
+            <p class="duration-price">${packagesList.duration} nights for <span class="price">${packagesList.packagePrice}</span></p>
+            <p><span>Book By:</span> ${packagesList.packageStartDate}</p>
+            <p><span>Valid Until:</span> ${packagesList.packageEndDate}</p>
+            <button class="button">BOOK NOW!</button>
+          </figcaption>
+      	</figure>`;  
+    }
 	})
 	.catch(console.log(' error due to connection'));
   

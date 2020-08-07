@@ -33,7 +33,7 @@ nav.visible {
   transition: top ease-in 500ms;
 }
 
-@media (max-width: 630px) {
+@media (max-width: 680px) {
   nav {
     display: flex;
     flex-direction: column;
@@ -53,7 +53,7 @@ nav.visible {
   }
 }
 
-@media (min-width: 630px) {
+@media (min-width: 680px) {
   .hamburger-menu {
       display: none;
   }

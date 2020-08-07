@@ -4,8 +4,6 @@ fetch('http://localhost:3000/api/packages')
 		return response.json();
   })
   .then(packages => {
-    let randomPackage;
-
     let popularDestinations = '';
 
     for (i=0 ; i<3 ; i++) {

@@ -12,3 +12,10 @@ window.addEventListener('click', function(e) {
     navBar.classList.remove('visible');
   }
 });
+
+// If escape is clicked, hide navbar.
+window.addEventListener('keydown', function(e) {
+  if (e.keyCode == 27) {
+    navBar.classList.remove('visible');
+  }
+})

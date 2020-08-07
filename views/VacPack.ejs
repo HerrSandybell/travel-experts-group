@@ -4,6 +4,71 @@
     <%- include('./partials/meta-data'); %>
     <%- include('./partials/style-sheets'); %>
     <title>Vacation-Packages | Travel Experts</title>
+    <style>
+      .vac-packages {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .package-container {
+        display: grid;
+        justify-content: center;
+        align-items: center;
+        grid-template-columns: 22rem, 1fr;
+        max-width: 50rem;
+        border: 8px outset silver;
+        /* border-radius: 1em; */
+        padding: 10px;
+      }
+
+      .package-container div {
+        grid-column: 1/2;
+        background-size: cover;
+        background-position: center;
+        width: 22rem;
+        height: 100%;
+      }
+      
+      .package-container img {
+        display: none;
+      }
+
+      .package-container figcaption {
+        grid-column: 2/3;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        max-width: 50ch;
+        padding: 1rem;
+      }
+
+      .package-container li {
+        list-style: none;
+      }
+
+      @media (max-width: 800px) {
+        .vac-packages {
+          width: 100%;
+        }
+        .package-container {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+
+        }
+        .package-container div {
+          height: 15rem;
+          width: 100%;  
+        }
+        .package-container figcaption {
+          height: 50%;
+        }
+      }
+    </style>
   </head>
 
 <body>
@@ -11,11 +76,20 @@
 
     <%- include('./partials/navigation'); %>
 
-    <header></header>
+    <header class="hero-section center flex-column background">
+      <h1>TRAVEL EXPERTS</h1>
+      <p>Thinking of a last-minute vacation?</p>
+    
+      <p>Our travel deals can take you there for less!</p> 
+      <a class="button" href="registration">SIGN UP NOW!
+        <span></span><span></span><span></span><span></span>
+      </a>
+    </header>
 
-    <main>
-      <h1> Please Select a Vacation Package:</h1> 
-      <div class="vacpackages"></div>
+    <main class="center">
+      <div class="vac-packages">
+
+      </div>
     </main>
  
     <%- include('./partials/footer'); %>
