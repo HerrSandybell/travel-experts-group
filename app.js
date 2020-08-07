@@ -98,6 +98,7 @@ app.post('/registration', function(req, res) {
 		console.log('Record inserted Successfully');
 	});
 
+  // when registration complete, edit message
 	res.render('registration', { message: 'Thank you, your registration  has been successfully completed' });
 });
 

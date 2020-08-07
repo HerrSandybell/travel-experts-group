@@ -16,7 +16,7 @@
     
     </header>
 
-    <main class="center background">
+    <main class="center flex-column background">
 
       <div id="error"></div>
         
@@ -72,12 +72,12 @@
 
       <!--Message for registration confirmation-->
       <% if(message==''){ %>
-        <h2></h2>
+        <h2 style="color: white"></h2>
       <% }
 
       else
       { %>
-        <h2><%= message %></h2>
+        <h2 style="color: white"><%= message %></h2>
       <% } %>
 
     </main>
