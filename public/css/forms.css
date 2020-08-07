@@ -51,6 +51,20 @@ label.required::after {
   position: relative;
 }
 
+.register-login p {
+  text-align: center;
+}
+
+.register-login a {
+  color: var(--teal);
+}
+
+.register-login a:hover,
+.register-login a:active {
+  color: var(--red);
+  text-decoration: underline;
+}
+
 /***** TOOLTIPS *****/
 
 [role="tooltip"] {

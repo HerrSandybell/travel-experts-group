@@ -1,5 +1,6 @@
 const vacPackages = document.querySelector('.vac-packages');
 
+// Fetch package JOSN and construct the package page
 fetch('http://localhost:3000/api/packages')
 	.then((response) => {
 		if (!response.ok) throw new Error('No data found');

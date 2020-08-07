@@ -77,9 +77,9 @@ app.use(
 
 app.post('/registration', function(req, res) {
 	var name = req.body.fullName;
-	var email = req.body.Email;
+	var email = req.body.email;
 	var userName = req.body.username;
-	var pass = req.body.Password;
+	var pass = req.body.password;
 	var address = req.body.address;
 	var cellPhone = req.body.businessPhone;
 	var homePhone = req.body.homePhone;
@@ -99,7 +99,7 @@ app.post('/registration', function(req, res) {
 	});
 
   // when registration complete, edit message
-	res.render('registration', { message: 'Thank you, your registration  has been successfully completed' });
+	res.render('registration', { message: 'Thank you, your registration has been successfully completed' });
 });
 
 // if no, send a 404 error as a response to the browser
