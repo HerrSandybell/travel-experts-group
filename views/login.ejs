@@ -15,12 +15,13 @@
   <main class="center background">
 
     <div id="error"></div>
-    <form class="register-login" action="/" method="GET">
+    <form class="register-login" action="/login" method="GET">
       <fieldset>
         <legend>Login</legend>
         <div>  
           <label class="required">Username:</label>
-          <input id="username" type="username" name="username" required autofocus pattern="[a-zA-Z0-9]" title="please enter a valid username">
+          <input id="username" type="username" name="username" minlength='4' title=" Please enter a valid username" required >
+          
         </div>
         <div>
           <label class="required">Password:</label>
