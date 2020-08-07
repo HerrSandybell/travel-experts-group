@@ -16,7 +16,7 @@ fetch('http://localhost:3000/api/packages')
           <div class="destination-info center flex-column">
             <figcaption figcaption>${randomPackage[0].packageName}</figcaption>
             <div>Blue water and golden sands.</div>
-            <a class="button" href="VacPack.ejs#${randomPackage[0].Id}">BOOK NOW!</a>
+            <a class="button" href="/VacPack.ejs#${randomPackage[0].Id}">BOOK NOW!</a>
           </div>  
         </figure>`
     }

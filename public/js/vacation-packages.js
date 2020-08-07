@@ -13,7 +13,7 @@ fetch('http://localhost:3000/api/packages')
           <figcaption>
             <h2>${packagesList.packageName}</h2>
             <p class="description">${packagesList.packagedDescription}</p> 
-            <p class="duration-price">${packagesList.duration} nights for <span class="price">${packagesList.packagePrice}</span></p>
+            <p class="duration-price">${packagesList.duration} nights for <span class="price">$${packagesList.packagePrice}.</span></p>
             <p><span>Book By:</span> ${packagesList.packageStartDate}</p>
             <p><span>Valid Until:</span> ${packagesList.packageEndDate}</p>
             <button class="button">BOOK NOW!</button>
