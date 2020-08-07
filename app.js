@@ -40,6 +40,14 @@ mongoose
 const app = express();
 app.set('view engine', 'ejs');
 
+// MOMENT/TIME
+const yearFormat="YYYY";
+const dateFormat="DD/MM/YYYY";
+app.locals.moment = moment;
+app.locals.yearFormat = yearFormat;
+app.locals.dateFormat = dateFormat;
+console.log(moment());
+
 // automatically check if requested file is found in /public
 // if yes, return that file as a response to the browser
 app.use(express.static(path.join(__dirname, './public')));

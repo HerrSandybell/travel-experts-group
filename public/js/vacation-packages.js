@@ -14,8 +14,8 @@ fetch('http://localhost:3000/api/packages')
             <h2>${packagesList.packageName}</h2>
             <p class="description">${packagesList.packagedDescription}</p> 
             <p class="duration-price">${packagesList.duration} nights for <span class="price">$${packagesList.packagePrice}.</span></p>
-            <p><span>Book By:</span> ${packagesList.packageStartDate}</p>
-            <p><span>Valid Until:</span> ${packagesList.packageEndDate}</p>
+            <p><span>Book By:</span> ${packagesList.packageStartDate.split("T")[0].split("-").reverse().join("-")}</p>
+            <p><span>Valid Until:</span> ${packagesList.packageEndDate.split("T")[0].split("-").reverse().join("-")}</p>
             <button class="button">BOOK NOW!</button>
           </figcaption>
       	</figure>`;  
