@@ -4,11 +4,15 @@ const express = require('express');
 const mongoose = require("mongoose");
 const dotenv = require("dotenv");
 const moment = require('moment');
+const assert = require('assert');
 const cors = require("cors");
-var bodyParser = require('body-parser');
+let bodyParser = require('body-parser');
 
 const Package = require('./models/gallery-model.js');
+const Customer = require('./models/customers-model.js');
 const { response } = require('express');
+const { json } = require('body-parser');
+const { resolve } = require('path');
 
 //***********************************************************
 /* Mongoose/MongoDB Connection */
@@ -68,6 +72,8 @@ app.get('/api/:coll', (req, res) => {
 })
 
 // Registration form  data transfer to database & confirmation message to registration page.
+let urlencodedParser = bodyParser.urlencoded({ extended: false })
+
 app.use(bodyParser.json());
 app.use(
 	bodyParser.urlencoded({
@@ -75,31 +81,54 @@ app.use(
 	})
 );
 
-app.post('/registration', function(req, res) {
-	var name = req.body.fullName;
-	var email = req.body.email;
-	var userName = req.body.username;
-	var pass = req.body.password;
-	var address = req.body.address;
-	var cellPhone = req.body.businessPhone;
-	var homePhone = req.body.homePhone;
 
-	var data = {
-		CustomerFullName: name,
-		CustomerEmail: email,
-		CustomerUserName: userName,
-		CustomerPassword: pass,
-		CustomerAddress: address,
-		CustomerCellPhone: cellPhone,
-		CustomerHomePhone: homePhone
-	};
-	db.collection('customers').insertOne(data, function(err, collection) {
-		if (err) throw err;
-		console.log('Record inserted Successfully');
-	});
+app.post('/registration', urlencodedParser, function(req, res) {
+  // Create a document with the posted information.
+  let registrationData = req.body;
+  let email = registrationData.CustomerEmail;
+  let username = registrationData.CustomerUserName;
+  let password = registrationData.CustomerPassword;
+  let confirmPassword = registrationData.confirmPassword;
+  const customers = db.collection('customers'); 
 
-  // when registration complete, edit message
-	res.render('registration', { message: 'Thank you, your registration has been successfully completed' });
+  checkForm()
+
+  // This function checks validity of registration inputs (and duplication in database) and posts the form to mongo if no errors are resulted.
+  function checkForm() {
+    let errors = {};
+    customers.find({'CustomerEmail' : email}).toArray()
+    .then(doc => {
+      if (doc.length != 0) {
+        console.log('ERROR: EMAIL EXISTS')
+        errors['emailMessage']='Email already exists'
+      }
+    })
+    .then(() => {
+      customers.find({'CustomerUserName' : username}).toArray().then(function (doc) {
+        if(Object.keys(doc).length != 0){
+          console.log('USER ERROR: Username already exists')
+          errors['usernameMessage'] = 'The Username already exists';
+        }
+      })
+    })
+    .then(() => {
+      if (password !== confirmPassword) {
+        errors['passwordMessage']= 'The passwords must match';
+      }
+    })
+    .then(() => {
+      console.log(errors)
+      if (Object.keys(errors).length == 0) {
+        db.collection('customers').insertOne(registrationData, (err, collection) => {
+          if (err) throw err;
+          console.log('Record inserted Successfully');
+        });
+        res.render('registration', { message: 'Thank you, your registration has been successfully completed' })
+      } else {
+        res.render('registration', { message: errors })
+      }
+    })
+  }
 });
 
 // if no, send a 404 error as a response to the browser
