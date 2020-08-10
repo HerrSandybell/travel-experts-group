@@ -1,4 +1,12 @@
-/***** Themes *******/
+/***** General styling *******/
+
+/** vars for non white or black colors **/
+:root {
+  --darkblue: #040E27;
+  --teal: #1EC6B6;
+  --lightteal: #26ffe9;
+  --red: #FF4A52;
+}
 
 nav {
   background: white;
@@ -57,7 +65,7 @@ text-decoration: none;
   border-radius: 8px;
   border: none;
 
-  /* Cool hover special effect */
+  /* curtain hover special effect */
   position: relative;
   overflow: hidden;
   z-index: 1;
@@ -108,6 +116,7 @@ main {
   max-width: 1000px;
 }
 
+/* Adds the main background to the element */
 .background {
   background-image: url('https://picsum.photos/id/1006/3000/2000');
   background-position: center;
@@ -287,22 +296,4 @@ footer a {
 footer a:hover,
 footer a:active {
   text-decoration: underline;
-}
-
-.form{
-  height: 85%;
-  width: 400px;
-  background-position: center;
-  margin:auto;
-  padding: -2em;
-}
-
-.placement h1{
-  color: rgb(66, 184, 142);
-  text-align: center;
-}
-
-.placement h2{
-  color: rgb(66, 184, 142);
-  text-align: center;
 }

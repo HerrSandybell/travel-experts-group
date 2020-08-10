@@ -1,3 +1,4 @@
+// Fetch package database and form package cards on the main page.
 fetch('http://localhost:3000/api/packages')
 	.then(response => {
 		if (!response.ok) throw new Error('No data found');

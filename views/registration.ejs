@@ -5,6 +5,9 @@
     <%- include('./partials/style-sheets'); %>
     <link rel="stylesheet" href="./css/forms.css">
     <title>Registration | Travel Experts</title>
+    <style>
+
+    </style>
   </head>
 
 <body>
@@ -18,7 +21,15 @@
 
     <main class="center flex-column background">
 
-      <div id="error"></div>
+      <div class="error">
+        <ul>
+          <li><%= message %></li>        
+          <li><%= errorMessage.emailMessage %></li>
+          <li><%= errorMessage.usernameMessage %></li>
+          <li><%= errorMessage.passwordMessage %></li>
+        </ul>
+      </div>
+
         
       <form class="register-login" id="form" action="/registration" method="POST">
         <fieldset>
@@ -69,16 +80,7 @@
           </section>
         </fieldset>
       </form>
-      <h2><%= message %></h2>
-      <!--Message for registration confirmation-->
-      <!-- <% if(message==''){ %>
-        <h2 style="color: white"></h2>
-      <% }
 
-      else
-      { %>
-        <h2 style="color: white"><%= message %></h2>
-      <% } %> -->
 
     </main>
           
@@ -86,5 +88,7 @@
 
   </div>
   <%- include('./partials/scripts'); %>
+  <script>
+  </script>
 </body>
 </html>

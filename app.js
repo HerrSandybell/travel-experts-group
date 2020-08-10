@@ -1,18 +1,23 @@
 // import modules
-const path = require('path');
-const express = require('express');
-const mongoose = require("mongoose");
-const dotenv = require("dotenv");
-const moment = require('moment');
-const assert = require('assert');
-const cors = require("cors");
-let bodyParser = require('body-parser');
+const path         = require('path');
+const express      = require('express');
+const mongoose     = require("mongoose");
+const dotenv       = require("dotenv");
+const moment       = require('moment');
+const assert       = require('assert');
+const cors         = require("cors");
+const session      = require('express-session');
+const cookieParser = require('cookie-parser');
+const flash        = require('connect-flash')
+
 
 const Package = require('./models/gallery-model.js');
 const Customer = require('./models/customers-model.js');
 const { response } = require('express');
 const { json } = require('body-parser');
 const { resolve } = require('path');
+
+let bodyParser = require('body-parser');
 
 //***********************************************************
 /* Mongoose/MongoDB Connection */
@@ -62,7 +67,7 @@ app.get('/', function(request, response){
 
 // Access any ejs/html file in the views folder.
  app.get('/:path', function(request, response){
-  response.render(request.params.path,{ message:''});
+  response.render(request.params.path,{ message:'', errorMessage:''});
 });
 
 // Access a collection in the mongoDB
@@ -74,6 +79,7 @@ app.get('/api/:coll', (req, res) => {
 // Registration form  data transfer to database & confirmation message to registration page.
 let urlencodedParser = bodyParser.urlencoded({ extended: false })
 
+// Parse the HTML for variables (for forms)
 app.use(bodyParser.json());
 app.use(
 	bodyParser.urlencoded({
@@ -123,11 +129,12 @@ app.post('/registration', urlencodedParser, function(req, res) {
           if (err) throw err;
           console.log('Record inserted Successfully');
         });
-        res.render('registration', { message: 'Thank you, your registration has been successfully completed' })
+        res.render('registration', { message: 'Thank you, your registration has been successfully completed', errorMessage: '' })
       } else {
-        res.render('registration', { message: errors })
+        res.render('registration', {message: '', errorMessage: errors})
       }
     })
+    .catch(err => console.log(err))
   }
 });
 
