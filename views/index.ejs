@@ -27,7 +27,9 @@
       <form class="destination-select center">
         <label>Where do you want to go?</label>
         <select>
-
+          <% for (let region of collections.regions) { %>
+            <option value="<%= region.RegionName %>"><%= region.RegionName %></option>
+          <% } %>
         </select>
       </form>
 
@@ -35,7 +37,17 @@
         <h2>Popular Destinations</h2>
 
         <div class="popular-destinations center">
-
+          <% for (i=0 ; i<3 ; i++) { let packages = collections.packages;
+            randomPackage = packages.splice(Math.floor(Math.random()*packages.length), 1) %>
+              <figure style="background-image: url('/images/<%= randomPackage[0].imageFile %>')" class="location-card">
+                <img src="" alt="Image of <%= randomPackage[0].packageName %>">
+                <div class="destination-info center flex-column">
+                  <figcaption figcaption><%= randomPackage[0].packageName %></figcaption>
+                  <div>Blue water and golden sands.</div>
+                  <a class="button" href="/VacPack.ejs#<%= randomPackage[0].Id %>">BOOK NOW!</a>
+                </div>  
+              </figure>
+          <% } %>
         </div>
       </div>
 
@@ -68,7 +80,5 @@
 
   </div>
   <%- include('./partials/scripts'); %>
-  <script src="/js/destination-select.js"></script>
-  <script src="/js/package-cards.js"></script>
 </body>
 </html>

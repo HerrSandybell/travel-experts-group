@@ -9,3 +9,9 @@ fetch('http://localhost:3000/api/regions')
     regions.forEach(item => destinationSelect.innerHTML += `
     <option value="${item.RegionName}">${item.RegionName}</option>`)
   })
+
+  // function(regions) {
+  //   const {RegionName} = regions
+  //   regions.forEach(item => destinationSelect.innerHTML += `
+  //   <option value="${RegionName}">${RegionName}</option>`)
+  // }

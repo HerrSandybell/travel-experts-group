@@ -11,8 +11,8 @@ const cookieParser = require('cookie-parser');
 const flash        = require('connect-flash')
 
 
-const Package = require('./models/gallery-model.js');
-const Customer = require('./models/customers-model.js');
+const Package = require('./app/models/gallery-model.js');
+const Customer = require('./app/models/customers-model.js');
 const { response } = require('express');
 const { json } = require('body-parser');
 const { resolve } = require('path');
@@ -44,10 +44,16 @@ mongoose
   });
 //***********************************************************
  
-
 // create express app
 const app = express();
 app.set('view engine', 'ejs');
+
+// cors origin URL - Allow inbound traffic from origin
+corsOptions = {
+  origin: "https://travel-experts-site.herokuapp.com/",
+  optionsSuccessStatus: 200 // some legacy browsers (IE11, various SmartTVs) choke on 204
+  };
+  app.use(cors(corsOptions));
 
 // MOMENT/TIME
 const yearFormat="YYYY";
@@ -61,7 +67,7 @@ console.log(moment());
 // if yes, return that file as a response to the browser
 app.use(express.static(path.join(__dirname, './public')));
 
-app.get('/', function(request, response){
+app.get('/', (request, response) => {
   response.render('index',{});
 });
 

@@ -26,7 +26,19 @@
 
     <main class="center">
       <div class="vac-packages">
-
+        <% for (let package of packages) { %>
+        <figure class="package-container" id="<%= package.Id %>"> 
+          <div style="background-image: url('http://localhost:3000/images/<%= package.imageFile %>')"><img src="" width="300" height="300"></div>
+          <figcaption>
+            <h2><%= package.packageName %></h2>
+            <p class="description"><%= package.packagedDescription %></p> 
+            <p class="duration-price"><%= package.duration %> nights for <span class="price">$<%= package.packagePrice %>.</span></p>
+            <p><span>Book By:</span> <%= String(package.packageStartDate).slice(4, 15) %></p>
+            <p><span>Valid Until:</span> <%= String(package.packageEndDate).slice(4, 15) %></p>
+            <button class="button">BOOK NOW!</button>
+          </figcaption>
+        </figure>
+        <% } %>
       </div>
     </main>
  
@@ -34,7 +46,5 @@
 
   </div>
   <%- include('./partials/scripts'); %>
-  <script src="/js/packages-list.js"></script>
-  <script src="/js/vacation-packages.js"></script>
 </body>
 </html>
