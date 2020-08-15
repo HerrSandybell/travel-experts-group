@@ -98,13 +98,14 @@ postContact: (req, res) => {
   <p>${req.body.message}</p>
 `;
   // create reusable transporter object using the default SMTP transport
+  const pass =process.env.PASS
   let transporter = nodemailer.createTransport({
     host: 'smtp.gmail.com',
     port: 587,
     secure: false, // true for 465, false for other ports
     auth: {
       user: 'usyaid123456789@gmail.com  ', // generated ethereal user
-      pass: 'usyaid123' // generated ethereal password
+      pass:process.env.PASS // hide  password
     },
     tls: {
       rejectUnauthorized: false
