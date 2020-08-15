@@ -37,11 +37,18 @@ router.get('/VacPack', mainController.showAllPackages);
 // Registration
 router.get('/registration', mainController.showRegistration);
 
+// Contact us  
+router.get('/contact', mainController.showContact);
+
+
 // Access any other ejs/html file in the views folder.
 router.get('/:path', mainController.showPage);
 
 // Post new user data via registration form to mongoDB
 router.post('/registration', urlencodedParser, mainController.postRegistration);
+
+// Post  new contact data  for email notification as postContact
+router.post('/contact', urlencodedParser, mainController.postContact);
 
 // Login
 // router.get('/login', mainController.showLogin);

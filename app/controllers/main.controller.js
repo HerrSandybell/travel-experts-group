@@ -24,7 +24,10 @@ module.exports = {
   showRegistration: (req, res) => {
     res.render('registration',{ message:'', errorMessage:''})
   },
-
+   //Render Contact Page
+  showContact: (req, res) => {
+  res.render('contact', { message: '' });
+  },
   // render requested page, if it exists
   showPage: (req, res) => {
     res.render(req.params.path,{ message:'', errorMessage:''})
@@ -79,8 +82,64 @@ module.exports = {
         })
         .catch(err => console.log(err))
       }
-  }
+  },
+//*********************contact us email notification **************** */
+postContact: (req, res) => {
+  console.log(req.body);
+  const output = `
+  <p>You have a new contact request</p>
+  <h3>Contact Details</h3>
+  <ul>  
+    <li>name: ${req.body.name}</li>
+    <li>subject: ${req.body.subject}</li>
+    <li>email: ${req.body.email}</li>
+  </ul>
+  <h3>Message</h3>
+  <p>${req.body.message}</p>
+`;
+  // create reusable transporter object using the default SMTP transport
+  let transporter = nodemailer.createTransport({
+    host: 'smtp.gmail.com',
+    port: 587,
+    secure: false, // true for 465, false for other ports
+    auth: {
+      user: 'usyaid123456789@gmail.com  ', // generated ethereal user
+      pass: 'usyaid123' // generated ethereal password
+    },
+    tls: {
+      rejectUnauthorized: false
+    }
+  });
+
+  // setup email data with unicode symbols
+  let mailOptions = {
+    from: '"Travel Expert Admin"<your@email.com>', // sender address
+    to: [ 'smaslam2018@gmail.com', 'markfish47@ymail.com', 'talatrach@gmail.com' ], // list of receivers
+    subject: 'Contact Request', // Subject line
+    text: 'Hello world?', // plain text body
+    html: output // html body
+  };
+
+  // send mail with defined transport object
+  transporter.sendMail(mailOptions, (error, info) => {
+    if (error) {
+      return console.log(error);
+    }
+    console.log('Message sent: %s', info.messageId);
+    console.log('Preview URL: %s', nodemailer.getTestMessageUrl(info));
+
+    res.render('contact', { message: 'Thank you, your message has been sent' });
+  });
 }
+};
+
+
+
+
+
+
+
+
 
   // Render login page
   // showLogin: (req, res) => {

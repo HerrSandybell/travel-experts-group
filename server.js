@@ -9,6 +9,8 @@ const express      = require('express'),
       session      = require('express-session'),
       cookieParser = require('cookie-parser'),
       flash        = require('connect-flash');
+      bodyParser = require('body-parser');
+      nodemailer = require('nodemailer');
 
 // create express app
 const app = express();
@@ -62,6 +64,9 @@ corsOptions = {
   optionsSuccessStatus: 200 
   };
   app.use(cors(corsOptions));
+
+  app.use(bodyParser.urlencoded({ extended: false }));
+  app.use(bodyParser.json()); 
 
 // *************** Set Routes ******************
 app.use(require('./app/routes'))
