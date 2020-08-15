@@ -74,6 +74,53 @@ module.exports = {
             db.collection('customers').insertOne(registrationData, (err, collection) => {
               if (err) throw err;
               console.log('Record inserted Successfully');
+
+          const output = `
+          <h2>Registration Confirmation</h2>
+          <h3>Welcome to Travel Expert </h3>
+          <ul>  
+            <li>username: ${registrationData.CustomerUserName}</li>
+            
+            <li>email: ${registrationData.CustomerEmail}</li>
+          </ul>
+          
+          `;
+
+
+          const pass =process.env.PASS
+          const user=process.env.USER
+          let transporter = nodemailer.createTransport({
+            host: 'smtp.gmail.com',
+            port: 587,
+            secure: false, // true for 465, false for other ports
+            auth: {
+              user: process.env.USER ,  // generated ethereal user
+              pass:process.env.PASS     // hide user name
+              
+            },
+            tls: {
+              rejectUnauthorized: false
+            }
+          });
+
+
+          let mailOptions = {
+            from: '"Travel Expert Admin"<your@email.com>', // sender address
+            to: [ 'smaslam2018@gmail.com', registrationData.CustomerEmail  ], // list of receivers
+            subject: 'Registration Confirmation', // Subject line
+            text: 'Hello world?', // plain text body
+            html: output // html body
+          };
+
+          transporter.sendMail(mailOptions, (error, info) => {
+            if (error) {
+              return console.log(error);
+            }
+            console.log('Message sent: %s', info.messageId);
+            console.log('Preview URL: %s', nodemailer.getTestMessageUrl(info));
+        
+          });
+                      
             });
             res.render('registration', { message: 'Thank you, your registration has been successfully completed', errorMessage: '' })
           } else {
@@ -84,6 +131,7 @@ module.exports = {
       }
   },
 //*********************contact us email notification **************** */
+
 postContact: (req, res) => {
   console.log(req.body);
   const output = `
@@ -99,13 +147,15 @@ postContact: (req, res) => {
 `;
   // create reusable transporter object using the default SMTP transport
   const pass =process.env.PASS
+  const user=process.env.USER
   let transporter = nodemailer.createTransport({
     host: 'smtp.gmail.com',
     port: 587,
     secure: false, // true for 465, false for other ports
     auth: {
-      user: 'usyaid123456789@gmail.com  ', // generated ethereal user
-      pass:process.env.PASS // hide  password
+      user: process.env.USER , // generated ethereal user
+      pass:process.env.PASS   //  
+      
     },
     tls: {
       rejectUnauthorized: false
