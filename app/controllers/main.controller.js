@@ -1,5 +1,8 @@
 // Here, we store all backend and server functions of the app
 
+// module for password encryption 
+const bcryptjs = require('bcryptjs');
+
 module.exports = {
   // Show homepage
   showIndex: (req, res) => {
@@ -65,9 +68,14 @@ module.exports = {
             }
           })
         })
-        .then(() => {
+        .then(async() => {                   // use async function 
           if (password !== confirmPassword) {
             errors['passwordMessage']= 'The passwords must match';
+          }else{
+            const salt= await bcryptjs.genSalt(10);
+            const hash= await bcryptjs.hash(registrationData.CustomerPassword,salt);
+            registrationData.CustomerPassword=hash;
+            registrationData.confirmPassword=hash;
           }
         })
         .then(() => {
